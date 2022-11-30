@@ -43,6 +43,7 @@
   "markdownlint.config": {
     "MD025": false,
     "MD029": false,
-    "MD040": false
+    "MD040": false,
+    "MD041": false
   }
 }
