@@ -1,34 +1,33 @@
 {
-  "eslint.workingDirectories": ["./code", "./scripts"],
   "typescript.tsdk": "./code/node_modules/typescript/lib",
   "[javascript]": {
-    "editor.defaultFormatter": "dbaeumer.vscode-eslint",
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.formatOnSave": true
   },
   "[javascriptreact]": {
-    "editor.defaultFormatter": "dbaeumer.vscode-eslint",
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.formatOnSave": true
   },
   "[typescript]": {
-    "editor.defaultFormatter": "dbaeumer.vscode-eslint",
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.formatOnSave": true
   },
   "[typescriptreact]": {
-    "editor.defaultFormatter": "dbaeumer.vscode-eslint",
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.formatOnSave": true
   },
 
   "editor.acceptSuggestionOnEnter": "on",
-	"editor.autoClosingBrackets": "always",
-	"editor.autoClosingDelete": "always",
-	"editor.autoClosingQuotes": "always",
-	"editor.find.autoFindInSelection": "never",
-	"editor.find.addExtraSpaceOnTop": false,
-	"editor.cursorStyle": "line",
-	"editor.formatOnSave": true,
-	"editor.formatOnSaveMode": "file",
-	"editor.formatOnPaste": true,
-	"editor.minimap.enabled": false,
+  "editor.autoClosingBrackets": "always",
+  "editor.autoClosingDelete": "always",
+  "editor.autoClosingQuotes": "always",
+  "editor.find.autoFindInSelection": "never",
+  "editor.find.addExtraSpaceOnTop": false,
+  "editor.cursorStyle": "line",
+  "editor.formatOnSave": true,
+  "editor.formatOnSaveMode": "file",
+  "editor.formatOnPaste": true,
+  "editor.minimap.enabled": false,
   "workbench.tree.expandMode": "singleClick",
   "workbench.tree.indent": 8,
   "workbench.tree.renderIndentGuides": "onHover",
