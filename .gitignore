@@ -28,3 +28,6 @@ test-storybooks/angular-cli/addon-jest.testresults.json
 
 # mailmap
 .mailmap
+
+# old workflows
+.github/workflows-old
