@@ -25,3 +25,6 @@ test-results
 # test-storybooks
 test-storybooks/ember-cli/ember-output
 test-storybooks/angular-cli/addon-jest.testresults.json
+
+# mailmap
+.mailmap
