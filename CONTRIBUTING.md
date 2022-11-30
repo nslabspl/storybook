@@ -23,14 +23,8 @@ yarn build --watch react core-server api addon-docs
 ```
 
 2. If you are running the sandbox in "linked" mode (the default), you should see the changes reflected on a refresh (you may need to restart it if changing server packages)
-
 3. If you are running the sandbox in "unlinked" mode you'll need to re-run the sandbox from the `publish` step to see the changes:
 
 ```
 yarn task --task dev --template <your template> --start-from=publish
 ```
-
-
-# Contributing to Storybook
-
-For further advice on how to contribute, please refer to our [NEW contributing guide on the Storybook website](https://storybook.js.org/docs/react/contribute/how-to-contribute).
