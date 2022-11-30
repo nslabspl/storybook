@@ -40,4 +40,9 @@
   "files.autoSaveDelay": 500,
   "files.insertFinalNewline": false,
   "files.saveConflictResolution": "askUser",
+  "markdownlint.config": {
+    "MD025": false,
+    "MD029": false,
+    "MD040": false
+  }
 }
