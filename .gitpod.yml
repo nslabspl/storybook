@@ -6,3 +6,5 @@ tasks:
 
   - name: Bootstrap
     init: ./bootstrap.sh --core
+    openMode: split-left
+    openIn: main
