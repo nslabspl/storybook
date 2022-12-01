@@ -58,7 +58,5 @@ Adding bugs to the milestone helps people looking for good ways to contribute, o
 about it.
 
 The best way to make sure a bug gets addressed quickly is to fix it yourself and issue a PR. If the fix adheres to all rules, we'll try to release it quickly.
-
 ## Discussing changes
-
 For all three types of changes, all discussion can occur in respective issue/PR.
