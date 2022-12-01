@@ -140,7 +140,7 @@ Nevertheless, edit `config` with care. Make sure to preserve the following confi
 - **entry**
 - **output**
 
-Furthermore, `config` requires the `HtmlWebpackplugin` to generate the preview page, so rather than overwriting `config.plugins` you should probably append to it (or overwrite it with care), see [the following issue](https://github.com/storybookjs/storybook/issues/6020) for examples on how to handle this:
+Furthermore, `config` requires the `HtmlWebpackplugin` to generate the preview page, so rather than overwriting `config.plugins` you should probably append to it (or overwrite it with care), see [the following issue](https://github.com/nslabspl/storybook/issues/6020) for examples on how to handle this:
 
 <!-- prettier-ignore-start -->
 
@@ -172,8 +172,8 @@ The following code snippet shows how you can replace the loaders from Storybook 
 
 <!-- prettier-ignore-end -->
 
-<div class="aside"> 
-💡 Projects initialized via generators (e.g, Vue CLI) may require that you import their own webpack config file (i.e., <code>/projectRoot/node_modules/@vue/cli-service/webpack.config.js</code>) to use a certain feature with Storybook. For other generators, make sure to check the documentation for instructions. 
+<div class="aside">
+💡 Projects initialized via generators (e.g, Vue CLI) may require that you import their own webpack config file (i.e., <code>/projectRoot/node_modules/@vue/cli-service/webpack.config.js</code>) to use a certain feature with Storybook. For other generators, make sure to check the documentation for instructions.
 </div>
 
 ### TypeScript Module Resolution
@@ -191,5 +191,5 @@ When working with TypeScript projects, the default Webpack configuration may fai
 <!-- prettier-ignore-end -->
 
 <div class="aside">
-💡 Learn more about Storybook's <a href="./typescript">built-in TypeScript support</a> or see <a href="https://github.com/storybookjs/storybook/issues/14087">this issue</a> for more information.
+💡 Learn more about Storybook's <a href="./typescript">built-in TypeScript support</a> or see <a href="https://github.com/nslabspl/storybook/issues/14087">this issue</a> for more information.
 </div>

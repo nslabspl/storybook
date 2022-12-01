@@ -27,7 +27,7 @@ Because both elements run in their own separate `iframes`, they use a communicat
 Storybook addons allow you to extend what's already possible with Storybook, everything from the [user interface](./addon-types.md) to the [API](./addons-api.md). Each one is classified into two broader categories.
 
 ## UI-based addons
-[UI-based addons](./addon-types.md#ui-based-addons) focus on customizing Storybook's user interface to extend your development workflow. Examples of UI-based addons include: [Controls](../essentials/controls.md), [Docs](../writing-docs/introduction.md) and [Accessibility](https://github.com/storybookjs/storybook/tree/dev/addons/a11y).
+[UI-based addons](./addon-types.md#ui-based-addons) focus on customizing Storybook's user interface to extend your development workflow. Examples of UI-based addons include: [Controls](../essentials/controls.md), [Docs](../writing-docs/introduction.md) and [Accessibility](https://github.com/nslabspl/storybook/tree/dev/addons/a11y).
 
 ## Preset addons
 
