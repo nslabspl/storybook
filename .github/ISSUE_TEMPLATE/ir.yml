@@ -1,0 +1,36 @@
+name: Incident report
+assignees: wojtekxtx
+description: Repot for an incident with storybook
+labels:
+  - "incident"
+body:
+  - type: input
+    id: description
+    validations:
+      required: true
+    attributes:
+      label: Describe what incident you'd like to report'
+      description: A clear and concise description of what happened
+      placeholder: Incident text
+  - type: dropdown
+    id: severity
+    validations:
+      required: true
+    attributes:
+      label: Levels
+      description: Severity level
+      multiple: false
+      options:
+        - "Low"
+        - "Medium"
+        - "High"
+        - "Maximum"
+        - "Blocker"
+  - type: textarea
+    validations:
+      required: false
+    id: commnts
+    attributes:
+      label: Comments?
+      description: If you have anything to add, do it below
+      placeholder: Add comment(s)
