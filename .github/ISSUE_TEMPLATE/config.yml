@@ -1,5 +1,1 @@
-blank_issues_enabled: false,
-contact_links:
-  - name: Incident Report
-    url: "https://github.com/nslabspl/storybook/blob/68a5005afee206c4d35a05f7c84816b8a02a39c2/.github/ISSUE_TEMPLATE/ir.yml"
-    about: Please report any incidents shall you encounter them.
+blank_issues_enabled: true,
