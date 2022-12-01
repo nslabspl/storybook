@@ -62,7 +62,7 @@ All loaders, defined at all levels that apply to a story, run before the story r
 
 Loaders have the following known limitations:
 
-- They are not yet compatible with the storyshots addon ([#12703](https://github.com/storybookjs/storybook/issues/12703)).
-- They are not yet compatible with inline-rendered stories in Storybook Docs ([#12726](https://github.com/storybookjs/storybook/issues/12726)).
+- They are not yet compatible with the storyshots addon ([#12703](https://github.com/nslabspl/storybook/issues/12703)).
+- They are not yet compatible with inline-rendered stories in Storybook Docs ([#12726](https://github.com/nslabspl/storybook/issues/12726)).
 
 If you're interested in contributing to this feature, read our [contribution guide](../contribute/how-to-contribute.md) and submit a pull request with your work.

@@ -103,7 +103,7 @@ These are the frameworks currently supported by Storyshots: `angular`, `html`, `
 
 ### Additional customization
 
-Storyshots is highly customizable and includes options for various advanced use cases. You can read more in the [addon’s documentation](https://github.com/storybookjs/storybook/tree/master/addons/storyshots/storyshots-core#options).
+Storyshots is highly customizable and includes options for various advanced use cases. You can read more in the [addon’s documentation](https://github.com/nslabspl/storybook/tree/master/addons/storyshots/storyshots-core#options).
 
 ---
 

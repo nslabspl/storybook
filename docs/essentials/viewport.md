@@ -47,7 +47,7 @@ The viewports object needs the following keys:
 
 ### Use a detailed set of devices
 
-By default, Storybook uses a [minimal set of viewports](https://github.com/storybookjs/storybook/blob/master/addons/viewport/src/defaults.ts#L135) to get you started. But you're not restricted to these. The addon offers a more granular list of devices that you can use.
+By default, Storybook uses a [minimal set of viewports](https://github.com/nslabspl/storybook/blob/master/addons/viewport/src/defaults.ts#L135) to get you started. But you're not restricted to these. The addon offers a more granular list of devices that you can use.
 
 Change your [`.storybook/preview.js`](../configure/overview.md#configure-story-rendering) to the following:
 
@@ -63,7 +63,7 @@ Change your [`.storybook/preview.js`](../configure/overview.md#configure-story-r
 
 Start your Storybook, and you'll see the new devices that you can use.
 
-See [here](https://github.com/storybookjs/storybook/blob/master/addons/viewport/src/defaults.ts#L3) the complete list of devices and their configurations.
+See [here](https://github.com/nslabspl/storybook/blob/master/addons/viewport/src/defaults.ts#L3) the complete list of devices and their configurations.
 
 ### Add new devices
 
@@ -107,7 +107,7 @@ For instance, if you want to use these two with the minimal set of viewports, yo
 
 <!-- prettier-ignore-end -->
 
-Both viewports (`Kindle Fire 2` and `Kindle Fire HD`) will feature in the list of devices by merging them into the [`MINIMAL_VIEWPORTS`](https://github.com/storybookjs/storybook/blob/master/addons/viewport/src/defaults.ts#L135).
+Both viewports (`Kindle Fire 2` and `Kindle Fire HD`) will feature in the list of devices by merging them into the [`MINIMAL_VIEWPORTS`](https://github.com/nslabspl/storybook/blob/master/addons/viewport/src/defaults.ts#L135).
 
 ### Configuring per component or story
 
