@@ -4,21 +4,19 @@ title: 'Write an addon'
 
 One of Storybook's main features is its robust addon ecosystem. Use addons to enhance and extend your development workflow. This page shows you how to create your own addon.
 
-## What we're building
-
+# What we're building
 For this example, we're going to build a bare-bones addon that:
 
 - Adds a new panel in Storybook.
 - Retrieves a custom parameter from the stories.
 - Displays the parameter data in the panel.
 
-### Addon kit
+## Addon kit
 
-This guide shows you how to setup an addon from scratch. Alternatively, you can jumpstart your addon development with the [`addon-kit`](https://github.com/storybookjs/addon-kit).
+This guide shows you how to setup an addon from scratch. Alternatively, you can jumpstart your addon development with the <!-- That will be forked and detached -->[`addon-kit`](https://github.com/storybookjs/addon-kit).
 
-### Addon directory structure
-
-We recommend a common addon file and directory structure for consistency.
+## Addon directory structure
+We recommend a *common addon file and directory structure* for consistency.
 
 | Files/Directories | Description                        |
 | :---------------- | :--------------------------------- |
@@ -29,11 +27,8 @@ We recommend a common addon file and directory structure for consistency.
 | package.json      | Addon metadata information         |
 | README.md         | General information for the addon  |
 
-### Get started
-
-Open a new terminal and create a new directory called `my-addon`. Inside it, run `npm init` to initialize a new node project. For your project's name, choose `my-addon` and for entry point `dist/preset.js`.
-
-Once you've gone through the prompts, your `package.json` should look like:
+## Get started
+Open a new terminal and create a new directory called `my-addon`. Inside it, run `npm init` to initialize a new node project. For your project's name, choose `my-addon` and for entry point `dist/preset.js`. Once you've gone through the prompts, your `package.json` should look like:
 
 ```json
 {
@@ -47,20 +42,16 @@ Once you've gone through the prompts, your `package.json` should look like:
   "license": "MIT"
 }
 ```
-
-### Build system
-
+## Build system
 We'll need to add the necessary dependencies and make some adjustments. Run the following command to install the required dependencies:
 
 <!-- prettier-ignore-start -->
-
 <CodeSnippets
   paths={[
     'common/storybook-write-addon-install-dependencies.yarn.js.mdx',
     'common/storybook-write-addon-install-dependencies.npm.js.mdx',
   ]}
 />
-
 <!-- prettier-ignore-end -->
 
 Initialize a local Storybook instance to allow you to test your addon.
@@ -76,13 +67,11 @@ npx storybook init
 Next, create a `.babelrc.js` file in the root directory with the following:
 
 <!-- prettier-ignore-start -->
-
 <CodeSnippets
   paths={[
     'common/my-addon-babel-configuration.js.mdx',
   ]}
 />
-
 <!-- prettier-ignore-end -->
 
 <div class="aside">
@@ -90,7 +79,6 @@ Babel configuration is required because our addon uses ES6 and JSX.
 </div>
 
 Change your `package.json` and add the following script to build the addon:
-
 ```json
 {
   "scripts": {
@@ -106,13 +94,11 @@ Change your `package.json` and add the following script to build the addon:
 Finally, create a new directory called `src` and inside a new file called `preset.js` with the following:
 
 <!-- prettier-ignore-start -->
-
 <CodeSnippets
   paths={[
     'common/my-addon-preset-implementation.js.mdx',
   ]}
 />
-
 <!-- prettier-ignore-end -->
 
 Presets are the way addons hook into Storybook. Among other tasks they allow you to:
@@ -121,20 +107,15 @@ Presets are the way addons hook into Storybook. Among other tasks they allow you
 - Add to the [preview iframe](./writing-presets.md#preview-entries)
 - Modify [babel](./writing-presets.md#babel) and [webpack settings](./writing-presets.md#webpack)
 
-For this example, we'll modify Storybook's UI.
-
-### Add a panel
-
+## Add a panel
 Now let’s add a panel to Storybook. Inside the `src` directory, create a new file called `register.js` and add the following:
 
 <!-- prettier-ignore-start -->
-
 <CodeSnippets
   paths={[
     'common/my-addon-initial-panel-state.js.mdx',
   ]}
 />
-
 <!-- prettier-ignore-end -->
 
 <div class="aside">
@@ -147,18 +128,15 @@ Going over the code snippet in more detail. When Storybook starts up:
 2. [Adds](./addons-api.md#addonsadd) a new `panel` titled `My Addon` to the UI
 3. When selected, the `panel` renders the static `div` content
 
-### Register the addon
-
+## Register the addon
 Finally, let’s hook it all up. Change `.storybook/main.js` to the following:
 
 <!-- prettier-ignore-start -->
-
 <CodeSnippets
   paths={[
     'common/my-addon-storybook-registration.js.mdx',
   ]}
 />
-
 <!-- prettier-ignore-end -->
 
 <div class="aside">
@@ -169,30 +147,23 @@ Run `yarn storybook` and you should see something similar to:
 
 ![Storybook addon initial state](./addon-initial-state.png)
 
-### Display story parameter
-
+## Display story parameter
 Next, let’s replace the `MyPanel` component from above to show the parameter.
 
 <!-- prettier-ignore-start -->
-
 <CodeSnippets
   paths={[
     'common/storybook-addon-change-panel.js.mdx',
   ]}
 />
-
 <!-- prettier-ignore-end -->
 
-The new version is made smarter by [`useParameter`](./addons-api.md#useparameter), which is a [React hook](https://reactjs.org/docs/hooks-intro.html) that updates the parameter value and re-renders the panel every time the story changes.
+The new version is made smarter by [`useParameter`](./addons-api.md#useparameter), which is a [React hook](https://reactjs.org/docs/hooks-intro.html) that updates the parameter value and re-renders the panel every time the story changes. The [addon API](./addons-api.md) provides hooks like this, so all of that communication can happen behind the scenes. That means you can focus on your addon's functionality.
 
-The [addon API](./addons-api.md) provides hooks like this, so all of that communication can happen behind the scenes. That means you can focus on your addon's functionality.
-
-### Using the addon with a story
-
+## Using the addon with a story
 When Storybook was initialized, it provided a small set of example stories. Change your `Button.stories.js` to the following:
 
 <!-- prettier-ignore-start -->
-
 <CodeSnippets
   paths={[
     'react/button-story-with-addon-example.js.mdx',
@@ -202,7 +173,6 @@ When Storybook was initialized, it provided a small set of example stories. Chan
     'svelte/button-story-with-addon-example.js.mdx',
   ]}
 />
-
 <!-- prettier-ignore-end -->
 
 After applying the changes to the story, the Storybook UI will show the following:
@@ -214,24 +184,19 @@ After applying the changes to the story, the Storybook UI will show the followin
   />
 </video>
 
-### Root level preset.js
-
+## Root level preset.js
 Before publishing the addon, we'll need to make one last change. In the root directory of the addon, create a new file called `preset.js` and add the following:
 
 <!-- prettier-ignore-start -->
-
 <CodeSnippets
   paths={[
     'common/my-addon-root-level-preset.js.mdx',
   ]}
 />
-
 <!-- prettier-ignore-end -->
 
 This auto-registers the addon without any additional configuration from the user. Storybook looks for either a `preset.js` or a `register.js` file located at the root level.
-
-### Packaging and publishing
-
+## Packaging and publishing
 Now that you've seen how to create a bare-bones addon let's see how to share it with the community. Before we begin, make sure your addon meets the following requirements:
 
 - `package.json` file with metadata about the addon
@@ -242,16 +207,4 @@ Now that you've seen how to create a bare-bones addon let's see how to share it 
 - [GitHub](https://github.com/) account to host your code
 - [NPM](https://www.npmjs.com/) account to publish the addon
 
-Reference the [storybook-addon-outline](https://www.npmjs.com/package/storybook-addon-outline) to see a project that meets these requirements.
-
-Learn how to [add to the addon catalog](./addon-catalog.md).
-
-### More guides and tutorials
-
-In the previous example, we introduced the structure of an addon but barely scratched the surface of what addons can do.
-
-To dive deeper, we recommend Storybook's [creating an addon](https://storybook.js.org/tutorials/create-an-addon/) tutorial. It’s an excellent walkthrough covering the same ground as the above introduction but goes further and leads you through the entire process of creating a realistic addon.
-
-### Addon kit
-
-To help you jumpstart the addon development, the Storybook maintainers created an [`addon-kit`](https://github.com/storybookjs/addon-kit), use it to bootstrap your next addon.
+Reference the [storybook-addon-outline](https://www.npmjs.com/package/storybook-addon-outline) to see a project that meets these requirements. Learn how to [add to the addon catalog](./addon-catalog.md).
