@@ -18,7 +18,7 @@ This upgrades all of the Storybook packages in your project to the latest stable
 
 <div class="aside">
 
-In addition to running the command, we also recommend checking the [MIGRATION.md file](https://github.com/storybookjs/storybook/blob/next/MIGRATION.md), for the detailed log of relevant changes and deprecations that might affect your upgrade.
+In addition to running the command, we also recommend checking the [MIGRATION.md file](https://github.com/nslabspl/storybook/blob/next/MIGRATION.md), for the detailed log of relevant changes and deprecations that might affect your upgrade.
 
 </div>
 

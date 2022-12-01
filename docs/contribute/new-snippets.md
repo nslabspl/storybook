@@ -12,7 +12,7 @@ We welcome community contributions to the code snippets. Here's a matrix of the 
 
 | React                                                                        | Vue                                                                        | Angular                                                                        | Web Components                                                                                    | Svelte                                                                        | Ember | HTML | Preact |
 | ---------------------------------------------------------------------------- | -------------------------------------------------------------------------- | ------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------- | ----- | ---- | ------ |
-| [✅](https://github.com/storybookjs/storybook/tree/next/docs/snippets/react) | [✅](https://github.com/storybookjs/storybook/tree/next/docs/snippets/vue) | [✅](https://github.com/storybookjs/storybook/tree/next/docs/snippets/angular) | [✅](https://github.com/storybookjs/storybook/tree/next/docs/snippets/web-components) (See below) | [✅](https://github.com/storybookjs/storybook/tree/next/docs/snippets/svelte) | ❌    | ❌   | ❌     |
+| [✅](https://github.com/nslabspl/storybook/tree/next/docs/snippets/react) | [✅](https://github.com/nslabspl/storybook/tree/next/docs/snippets/vue) | [✅](https://github.com/nslabspl/storybook/tree/next/docs/snippets/angular) | [✅](https://github.com/nslabspl/storybook/tree/next/docs/snippets/web-components) (See below) | [✅](https://github.com/nslabspl/storybook/tree/next/docs/snippets/svelte) | ❌    | ❌   | ❌     |
 
 <div class="aside">
 💡 The <code>Web Components</code> snippets are present but not fully documented. If you're willing to help, submit a pull request.
@@ -32,7 +32,7 @@ Before adding your snippets, open the `docs` folder with your editor of choice. 
 
 Now that you're familiar with how the documentation is structured, it's time to add the code snippets. First, go to the `docs/snippets/` folder and create a new directory for your framework of choice (e.g., `ember`).
 
-Browse the documentation and look for the code snippets you're willing to contribute. For example, on the [setup page](https://github.com/storybookjs/storybook/blob/next/docs/get-started/setup.md), you should see something similar to:
+Browse the documentation and look for the code snippets you're willing to contribute. For example, on the [setup page](https://github.com/nslabspl/storybook/blob/next/docs/get-started/setup.md), you should see something similar to:
 
 ```jsx
 // /docs/get-started/setup.md

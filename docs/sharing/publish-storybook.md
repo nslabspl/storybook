@@ -67,7 +67,7 @@ Run the following command after the package finishes installing. Make sure that 
 npx chromatic --project-token=<your-project-token>
 ```
 
-When Chromatic finishes, you should have successfully deployed your Storybook. Preview it by clicking the link provided (i.e., https://random-uuid.chromatic.com).
+When Chromatic finishes, you should have successfully deployed your Storybook. Preview it by clicking the link provided (i.e., <https://random-uuid.chromatic.com>).
 
 ```shell
 Build 1 published.
@@ -121,7 +121,7 @@ When you publish Storybook, you also get component history and versioning down t
 
 ## Publish Storybook to other services
 
-You can publish the static Storybook web app to many hosts. We maintain [`storybook-deployer`](https://github.com/storybookjs/storybook-deployer), a handy tool to help you publish to AWS or GitHub pages.
+You can publish the static Storybook web app to many hosts. We maintain [`storybook-deployer`](https://github.com/nslabspl/storybook-deployer), a handy tool to help you publish to AWS or GitHub pages.
 
 But features like [Composition](./storybook-composition.md), [embed](./embed.md), history, and versioning require tighter integration with Storybook APIs and secure authentication. Your hosting provider may not be capable of supporting these features. Learn about the Component Publishing Protocol (CPP) to see what.
 

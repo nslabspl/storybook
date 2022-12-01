@@ -82,4 +82,4 @@ An excellent way to check your reproduction is to have it deployed online. We re
 
 ## Submit the issue
 
-Finally, create your issue in the [Storybook issue tracker](https://github.com/storybookjs/storybook/issues/new/choose), go through the required steps, and provide a detailed description of the problem. Add the GitHub repository and [deployed reproduction](https://www.chromatic.com/docs/setup?utm_source=storybook_website&utm_medium=link&utm_campaign=storybook#view-published-storybook) to help with the triage process.
+Finally, create your issue in the [Storybook issue tracker](https://github.com/nslabspl/storybook/issues/new/choose), go through the required steps, and provide a detailed description of the problem. Add the GitHub repository and [deployed reproduction](https://www.chromatic.com/docs/setup?utm_source=storybook_website&utm_medium=link&utm_campaign=storybook#view-published-storybook) to help with the triage process.

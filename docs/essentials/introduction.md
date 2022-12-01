@@ -13,11 +13,9 @@ A major strength of Storybook are [addons](https://storybook.js.org/addons) that
 - [Measure & outline](./measure-and-outline.md)
 - [Highlight](./highlight.md)
 
-### Installation
+# Installation
 
-If you ran `storybook init` to include Storybook in your project, the Essentials addon ([`@storybook/addon-essentials`](https://storybook.js.org/addons/tag/essentials)) is already installed and configured for you. You can skip the rest of this section.
-
-If you're upgrading from a previous Storybook version, you'll need to run the following command in your terminal:
+If you ran `storybook init` to include Storybook in your project, the Essentials addon ([`@storybook/addon-essentials`](https://storybook.js.org/addons/tag/essentials)) is already installed and configured for you. You can skip the rest of this section. If you're upgrading from a previous Storybook version, you'll need to run the following command in your terminal:
 
 <!-- prettier-ignore-start -->
 
@@ -42,7 +40,7 @@ Update your Storybook configuration (in [`.storybook/main.js`](../configure/over
 
 <!-- prettier-ignore-end -->
 
-### Configuration
+# Configuration
 
 Essentials is "zero-config”. It comes with a recommended configuration out of the box.
 
@@ -56,10 +54,6 @@ If you need to reconfigure any of the [individual Essentials addons](https://sto
     'common/storybook-addon-actions-install.npm.js.mdx',
   ]}
 />
-
-<!-- prettier-ignore-end -->
-
-<!-- prettier-ignore-start -->
 
 <CodeSnippets
   paths={[
@@ -96,11 +90,9 @@ Below is an abridged configuration and table with all the available options for 
 
 When you start Storybook, your custom configuration will override the default.
 
-### Disabling addons
+# Disabling addons
 
-If you need to disable any of the Essential's addons, you can do it by changing your [`.storybook/main.js`](../configure/overview.md#configure-story-rendering) file.
-
-For example, if you wanted to disable the [backgrounds addon](./backgrounds.md), you would apply the following change to your Storybook configuration:
+If you need to disable any of the Essential's addons, you can do it by changing your [`.storybook/main.js`](../configure/overview.md#configure-story-rendering) file. For example, if you wanted to disable the [backgrounds addon](./backgrounds.md), you would apply the following change to your Storybook configuration:
 
 <!-- prettier-ignore-start -->
 
@@ -109,11 +101,8 @@ For example, if you wanted to disable the [backgrounds addon](./backgrounds.md),
     'common/storybook-main-disable-addon.js.mdx',
   ]}
 />
-
 <!-- prettier-ignore-end -->
 
 <div class="aside">
-
 💡 You can use the following keys for each individual addon: `actions`, `backgrounds`, `controls`, `docs`, `viewport`, `toolbars`, `measure`, `outline`, `highlight`.
-
 </div>

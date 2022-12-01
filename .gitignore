@@ -31,3 +31,6 @@ test-storybooks/angular-cli/addon-jest.testresults.json
 
 # old workflows
 .github/workflows-old
+
+# Snippets
+.vscode/*.code-snippets

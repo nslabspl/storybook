@@ -4,9 +4,8 @@ title: Install addons
 
 Storybook has [hundreds of reusable addons](https://storybook.js.org/addons) that are packaged as NPM modules. Let's walk through how to extend Storybook by installing and registering addons.
 
-### Using addons
-
-With the exception of preset addons, all addons have the same installation process: install and register.
+# Using addons
+With the exception of `preset addons`, all addons have the same installation process: *installation and registration*.
 
 For example, to include accessibility testing in Storybook, run the following command to install the necessary addon:
 
@@ -17,13 +16,11 @@ yarn add -D @storybook/addon-a11y
 Next, update [`.storybook/main.js`](../configure/overview.md#configure-story-rendering) to the following:
 
 <!-- prettier-ignore-start -->
-
 <CodeSnippets
   paths={[
     'common/storybook-main-addon-registration.js.mdx',
   ]}
 />
-
 <!-- prettier-ignore-end -->
 
 <div class="aside">
@@ -34,8 +31,7 @@ Now when you run Storybook the accessibility testing addon will be enabled.
 
 ![Storybook addon installed and registered](./storybook-addon-installed-registered.png)
 
-### Using preset addons
-
+# Using preset addons
 Storybook preset addons are grouped collections of specific `babel`, `webpack` and `addons` configurations for distinct use cases. Each one with its own set of instructions. Preset addons have a three-step installation process: install, register and optionally configuration.
 
 For example, to use SCSS styling, run the following command to install the addon and the required dependencies:
@@ -50,13 +46,11 @@ For example, to use SCSS styling, run the following command to install the addon
 />
 
 <!-- prettier-ignore-end -->
-
 <div class="aside">
  💡 Tip: Use the Webpack 5 snippet only if your framework already includes support for this version. Otherwise, use the Webpack 4 snippet. 
 </div>
 
 Next, update [`.storybook/main.js`](../configure/overview.md#configure-story-rendering) to the following:
-
 <!-- prettier-ignore-start -->
 
 <CodeSnippets
@@ -64,12 +58,11 @@ Next, update [`.storybook/main.js`](../configure/overview.md#configure-story-ren
     'common/storybook-main-preset-config.js.mdx',
   ]}
 />
-
 <!-- prettier-ignore-end -->
 
 Now when you run Storybook it will configure itself to use SCSS styling. No further configuration is needed.
 
-#### Optional configuration
+# Optional configuration
 
 Most preset addons can also take additional parameters. The most common use cases are:
 

@@ -2,22 +2,20 @@
 title: 'Add to the addon catalog'
 ---
 
-Storybook addons are listed in the [catalog](https://storybook.js.org/addons/) and distributed via npm. The catalog is populated by querying npm's registry for Storybook-specific metadata in `package.json`.
+Storybook addons are listed in the [catalog](https://storybook.js.org/addons/) and distributed via `npm`. The catalog is populated by querying npm's registry for Storybook-specific metadata in `package.json`.
 
 Add your addon to the catalog by publishing a npm package that follows these requirements:
 
 - `package.json` with [module information](./writing-addons.md#get-started) and [addon metadata](#addon-metadata)
 - `README.md` file with installation and configuration instructions
-- `/dist` directory containing transpiled ES5 code
-- `preset.js` file written as an ES5 module at the root level
+- `/dist` directory containing *transpiled* ES5 code
+- `preset.js` file written as *ES5 module* located *at the root level* of directory structure.
 
 <div class="aside">
-
 Get a refresher on how to [write a Storybook addon](./writing-addons.md).
-
 </div>
 
-## Addon metadata
+# Addon metadata
 
 We rely on metadata to organize your addon in the catalog. You must add the <code>storybook-addons</code> as the first keyword, followed by your addon's category. Additional keywords will be used in search and as tags.
 
@@ -82,6 +80,6 @@ The `package.json` above appears like below in the catalog. See an example of a 
 
 ![Storybook addon in the catalog](./addon-display.png)
 
-#### How long does it take for my addon to show up in the catalog?
+# How long does it take for my addon to show up in the catalog?
 
-Once you publish the addon, it will appear in the catalog. There may be a delay between the time you publish your addon and when it's listed in the catalog. If your addon doesn't show up within 24 hours, [open an issue](https://github.com/storybookjs/frontpage/issues).
+Once you publish the addon, it should appear in the catalog *immediately*. If your addon doesn't show up within 24 hours, [open an issue](https://github.com/nslabspl/storybook/issues).

@@ -6,11 +6,9 @@ title: 'Toolbars & globals'
 
 Storybook ships with toolbar addons to control the [viewport](./viewport.md) and [background](./backgrounds.md) the story renders in. You can also create your own toolbar items which control special “globals” which you can then read to create [decorators](../writing-stories/decorators.md) to control story rendering.
 
-## Globals
+# Globals
 
-Globals in Storybook represents “global” (as in not story-specific) inputs to the rendering of the story. As they aren’t specific to the story, they aren’t passed in the `args` argument to the story function (although they are accessible as `context.globals`), but typically you use them in decorators, which apply to all stories.
-
-When the globals change, the story re-renders, and the decorators rerun with the new values. The easiest way to change globals is to create a toolbar item for them.
+Globals in Storybook represents “global” (as in not story-specific) inputs to the rendering of the story. As they aren’t specific to the story, they aren’t passed in the `args` argument to the story function (although they are accessible as `context.globals`), but typically you use them in decorators, which apply to all stories. When the globals change, the story re-renders, and the decorators rerun with the new values. The easiest way to change globals is to create a toolbar item for them.
 
 ## Global types and the toolbar annotation
 
@@ -36,9 +34,7 @@ When you start your Storybook, you should see a new dropdown with the `light` an
 
 ## Create a decorator
 
-We have a `global` implemented. Let's wire it up! We can consume our new `theme` global in a decorator using the `context.globals.theme` value.
-
-For example, suppose you are using `styled-components`. You can add a theme provider decorator to your [`.storybook/preview.js`](../configure/overview.md#configure-story-rendering) config:
+We have a `global` implemented. Let's wire it up! We can consume our new `theme` global in a decorator using the `context.globals.theme` value.For example, suppose you are using `styled-components`. You can add a theme provider decorator to your [`.storybook/preview.js`](../configure/overview.md#configure-story-rendering) config:
 
 <!-- prettier-ignore-start -->
 
@@ -52,9 +48,7 @@ For example, suppose you are using `styled-components`. You can add a theme prov
 
 ## Advanced usage
 
-So far, we've managed to create and consume a global inside Storybook.
-
-Now let's take a look at a more complex example. Let's suppose we wanted to implement a new global called **locale** for internationalization, which shows a flag on the right side of the toolbar.
+So far, we've managed to create and consume a `global` inside Storybook. Now let's take a look at a more complex example. Let's suppose we wanted to implement a new global called **locale** for internationalization, which shows a flag on the right side of the toolbar.
 
 In your [`.storybook/preview.js`](../configure/overview.md#configure-story-rendering), add the following:
 
@@ -76,9 +70,7 @@ In your [`.storybook/preview.js`](../configure/overview.md#configure-story-rende
 
 <div class="aside">
 💡The <code>@storybook/addon-toolbars</code> addon is required to use toolbars. The toolbars addon is included by default in <code>@storybook/addon-essentials</code>.
-</div>
-
-By adding the configuration element `right`, the text will be displayed on the right side in the toolbar menu once you connect it to a decorator.
+</div>. By adding the configuration element `right`, the text will be displayed on the right side in the toolbar menu once you connect it to a decorator.
 
 Here's a list of the configuration options available.
 
@@ -92,11 +84,7 @@ Here's a list of the configuration options available.
 
 ## Consuming globals from within a story
 
-We recommend consuming globals from within a decorator and define a global setting for all stories.
-
-But we're aware that sometimes it's more beneficial to use toolbar options on a per-story basis.
-
-Using the example above, you can modify any story to retrieve the **Locale** `global` from the story context:
+We recommend consuming `globals` from within a decorator and define a global setting for all stories. But we're aware that sometimes it's more beneficial to use toolbar options on a per-story basis. Using the example below, you can modify any story to retrieve the **Locale** `global` from the story context:
 
 <!-- prettier-ignore-start -->
 
@@ -134,9 +122,7 @@ Using the example above, you can modify any story to retrieve the **Locale** `gl
 
 ## Consuming globals from within an addon
 
-If you're working on a Storybook addon and need to retrieve globals, you can do so. The `@storybook/manager-api` package provides a hook for this scenario. You can use the [`useGlobals()`](../addons/addons-api.md#useglobals) hook to retrieve any globals you want.
-
-Using the ThemeProvider example above, you could expand it to display which theme is active inside a panel as such:
+The `@storybook/manager-api` package provides a hook for this scenario. You can use the [`useGlobals()`](../addons/addons-api.md#useglobals) hook to retrieve any globals you want. Using the `ThemeProvider` example above, you could expand it to display which theme is active inside a panel as such:
 
 <!-- prettier-ignore-start -->
 
@@ -150,11 +136,7 @@ Using the ThemeProvider example above, you could expand it to display which them
 
 ## Updating globals from within an addon
 
-If you're working on a Storybook addon that needs to update the global and refreshes the UI, you can do so. As mentioned previously, the `@storybook/manager-api` package provides the necessary hook for this scenario. You can use the `updateGlobals` function to update any global values you need.
-
-Also, you can use both `@storybook/addons` and `@storybook/core-events` packages together to trigger the refresh.
-
-For example, if you were working on a [toolbar addon](../addons/addon-types.md#toolbars), and you want to refresh the UI and update the global once the user clicks on a button:
+As mentioned previously, the `@storybook/manager-api` package provides the necessary hook for this scenario. You can use the `updateGlobals` function to update any global values you need. Also, you can use both `@storybook/addons` and `@storybook/core-events` packages together to trigger the refresh. For example, if you were working on a [toolbar addon](../addons/addon-types.md#toolbars), and you want to refresh the UI and update the global once the user clicks on a button:
 
 <!-- prettier-ignore-start -->
 

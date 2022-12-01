@@ -18,7 +18,7 @@ It has three different modes:
 
 Storybook works with evergreen browsers by default.
 
-If you want to run Storybook in IE11, make sure to [disable](../essentials/introduction.md#disabling-addons) the docs-addon that is part of `@storybook/addon-essentials`, as this currently [causes issues in IE11](https://github.com/storybookjs/storybook/issues/8884).
+If you want to run Storybook in IE11, make sure to [disable](../essentials/introduction.md#disabling-addons) the docs-addon that is part of `@storybook/addon-essentials`, as this currently [causes issues in IE11](https://github.com/nslabspl/storybook/issues/8884).
 
 Here are some key features of Storybook's Babel configurations.
 
@@ -28,7 +28,7 @@ We have added ES2016 support with Babel for transpiling your JS code.
 
 In addition to that, we've added a few additional features, like [object spreading](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax) and [`async` `await`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/async_function).
 
-Check out our [source](https://github.com/storybookjs/storybook/blob/main/lib/core-common/src/utils/babel.ts) to learn more about these plugins.
+Check out our [source](https://github.com/nslabspl/storybook/blob/main/lib/core-common/src/utils/babel.ts) to learn more about these plugins.
 
 ### Custom config file
 
@@ -74,7 +74,7 @@ To activate V7 mode, set the feature flag in your `.storybook/main.js` config:
 
 ### Migrating from V6
 
-For detailed instructions on migrating from `V6` mode, please see [MIGRATION.md](https://github.com/storybookjs/storybook/blob/next/MIGRATION.md#babel-mode-v7).
+For detailed instructions on migrating from `V6` mode, please see [MIGRATION.md](https://github.com/nslabspl/storybook/blob/next/MIGRATION.md#babel-mode-v7).
 
 ### Generate a babelrc
 
