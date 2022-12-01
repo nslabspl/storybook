@@ -3,12 +3,13 @@ name: Unit tests
 on:
   push:
     branches:
-      - dev
+      - release
   pull_request:
     types: [opened, synchronize, reopened]
 
 jobs:
   build:
+    timeout-minutes: 45
     name: Core Unit Tests node-${{ matrix.node_version }}, ${{ matrix.os }}
     strategy:
       fail-fast: false
