@@ -2,9 +2,7 @@
 title: 'Decorators'
 ---
 
-A decorator is a way to wrap a story in extra “rendering” functionality. Many addons define decorators to augment your stories with extra rendering or gather details about how your story renders.
-
-When writing stories, decorators are typically used to wrap stories with extra markup or context mocking.
+A decorator is a way to wrap a story in extra “rendering” functionality. Many addons define decorators to augment your stories with extra rendering or gather details about how your story renders. When writing stories, decorators are typically used to wrap stories with extra markup or context mocking.
 
 ## Wrap stories with extra markup
 
