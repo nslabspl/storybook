@@ -1,1 +1,4 @@
-blank_issues_enabled: true,
+contact_links:
+  - name: Issue with upstream project
+    url: "https://github.com/storybookjs/storybook/issues/new/choose"
+    about: Create issue in upstream

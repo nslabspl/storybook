@@ -8,4 +8,4 @@
 
 ## Reporting a Vulnerability
 
-To report a vulnerability, you can reach out to the maintainer directly at his mail: address to be found on his GitHub profile.
+To report a vulnerability, you can reach out to the maintainer directly at [this email address](mailto:wojtekx.tx@gmail.com)
