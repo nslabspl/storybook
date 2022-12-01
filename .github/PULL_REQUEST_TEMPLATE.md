@@ -8,5 +8,7 @@
 ## Comments
 
 <!--
-*Everybody*: Please submit all PRs to the `dev` branch.
+*Everybody*: Please submit
+* PRs relatted to `/docs` folder to `docs` branch
+* all other PRs to the `dev` branch.
 -->
