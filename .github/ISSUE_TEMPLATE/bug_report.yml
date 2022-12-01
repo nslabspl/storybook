@@ -1,10 +1,8 @@
 name: Bug report 🐞
 description: >-
   Something is broken and you have a reliable reproduction? Let us know here.
-  For questions, please use "Question" below.
 title: '[Bug]: '
 labels:
-  - needs triage
   - bug
 body:
   - type: textarea
@@ -16,6 +14,8 @@ body:
       required: true
   - type: textarea
     id: reproduce
+    validations:
+      required: true
     attributes:
       label: To Reproduce
       description: >-
@@ -24,15 +24,16 @@ body:
         [documentation](https://storybook.js.org/docs/react/contribute/how-to-reproduce)
         to learn more about creating reproductions.
       placeholder: >-
-        Paste your repository and deployed reproduction here. We prioritize
-        issues with reproductions over those without.
-      render: shell
+        Paste your repository path *and* deployed reproduction here.
+      render: shell-script
   - type: textarea
     id: system
+    validations:
+      required: true
     attributes:
       label: System
       description: Please paste the results of `npx sb@next info` here.
-      render: shell
+      render: shell-script
   - type: textarea
     id: context
     attributes:
