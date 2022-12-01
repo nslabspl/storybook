@@ -6,13 +6,13 @@ A Storybook release process based on [Semver](http://semver.org/). In short just
 
 During the Storybook 3.x transition we've undergone a series of growing pains as we've opened up the development process. We've had questions about:
 
-1.  how to adhere to `semver`?
-2.  how to do marketing releases (while adhering to `semver`)?
-3.  how to introduce significant new features (e.g. `vue` support, story hierarchy)?
-4.  how to converge on key design decisions (e.g. new addons API)?
-5.  how to schedule releases?
-6.  how to maintain quality/stability through the process?
-7.  how to pay down tech debt as we go?
+1. how to adhere to `semver`?
+2. how to do marketing releases (while adhering to `semver`)?
+3. how to introduce significant new features (e.g. `vue` support, story hierarchy)?
+4. how to converge on key design decisions (e.g. new addons API)?
+5. how to schedule releases?
+6. how to maintain quality/stability through the process?
+7. how to pay down tech debt as we go?
 
 This process attempts to address all these concerns in one go.
 
@@ -20,9 +20,9 @@ This process attempts to address all these concerns in one go.
 
 [Semver](http://semver.org/) dictates three types of release:
 
-1.  *MAJOR* version when you make incompatible API changes,
-2.  *MINOR* version when you add functionality in a backwards-compatible manner, and
-3.  *PATCH* version when you make backwards-compatible bug fixes.
+1. *MAJOR* version when you make incompatible API changes,
+2. *MINOR* version when you add functionality in a backwards-compatible manner, and
+3. *PATCH* version when you make backwards-compatible bug fixes.
 
 We'll do our best to adhere to Semver.
 
@@ -38,9 +38,9 @@ merged into `dev`, and we've already laid most of the groundwork for this.
 Every new feature, particularly significant ones (e.g. Vue support, deep
 hierarchy for stories) deserves more attention:
 
-1.  They should be well-tested by the community before we release.
-2.  They often have architectural implications for the entire Storybook ecosystem, so should be discussed thoroughly before release. Doing `alpha` releases allow us to test in the community without necessarily achieving agreement.
-3.  They often deserve proper marketing treatment (blog posts, release announcement, podcast, etc.)
+1. They should be well-tested by the community before we release.
+2. They often have architectural implications for the entire Storybook ecosystem, so should be discussed thoroughly before release. Doing `alpha` releases allow us to test in the community without necessarily achieving agreement.
+3. They often deserve proper marketing treatment (blog posts, release announcement, podcast, etc.)
 
 ## MAJOR releases
 
