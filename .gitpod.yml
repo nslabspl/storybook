@@ -8,3 +8,4 @@ tasks:
     init: ./bootstrap.sh --core
     openMode: split-left
     openIn: main
+    before:  ssh --key-send
