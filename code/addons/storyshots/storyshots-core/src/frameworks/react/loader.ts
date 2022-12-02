@@ -1,7 +1,7 @@
+import type { StoryshotsOptions } from '../../api/StoryshotsOptions';
 import configure from '../configure';
 import hasDependency from '../hasDependency';
 import type { Loader } from '../Loader';
-import type { StoryshotsOptions } from '../../api/StoryshotsOptions';
 
 function test(options: StoryshotsOptions): boolean {
   return options.framework === 'react' || (!options.framework && hasDependency('@storybook/react'));
@@ -31,7 +31,7 @@ function load(options: StoryshotsOptions) {
     return renderAPI;
   });
 
-  // eslint-disable-next-line global-require
+  // eslint-disable-dev-line global-require
   const storybook = require('@storybook/react');
 
   configure({

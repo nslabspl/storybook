@@ -1,6 +1,6 @@
-import fs from 'fs';
-import { presetsAddPreset, getFrameworks } from '@storybook/postinstall';
 import { logger } from '@storybook/node-logger';
+import { getFrameworks, presetsAddPreset } from '@storybook/postinstall';
+import fs from 'fs';
 
 export default function transformer(file, api) {
   const packageJson = JSON.parse(fs.readFileSync('./package.json'));
@@ -15,7 +15,7 @@ export default function transformer(file, api) {
     return file.source;
   }
 
-  // eslint-disable-next-line prefer-destructuring
+  // eslint-disable-dev-line prefer-destructuring
   framework = frameworks[0];
 
   const { dependencies, devDependencies } = packageJson;

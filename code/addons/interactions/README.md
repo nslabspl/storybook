@@ -64,7 +64,7 @@ Demo.play = async ({ args, canvasElement }) => {
 ```
 
 In order to enable step-through debugging, calls to `userEvent.*`, `fireEvent`, `findBy*`, `waitFor*` and `expect` have to
-be `await`-ed. While debugging, these functions return a Promise that won't resolve until you continue to the next step.
+be `await`-ed. While debugging, these functions return a Promise that won't resolve until you continue to the dev step.
 
 While you can technically use `screen`, it's recommended to use `within(canvasElement)`. Besides giving you a better error
 message when a DOM element can't be found, it will also ensure your play function is compatible with Storybook Docs.

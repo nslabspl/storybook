@@ -1,20 +1,16 @@
-import global from 'global';
-import * as React from 'react';
-import { useChannel, useParameter } from '@storybook/manager-api';
 import {
-  FORCE_REMOUNT,
-  IGNORED_EXCEPTION,
-  STORY_RENDER_PHASE_CHANGED,
-  STORY_THREW_EXCEPTION,
-  PLAY_FUNCTION_THREW_EXCEPTION,
+    FORCE_REMOUNT,
+    IGNORED_EXCEPTION, PLAY_FUNCTION_THREW_EXCEPTION, STORY_RENDER_PHASE_CHANGED,
+    STORY_THREW_EXCEPTION
 } from '@storybook/core-events';
 import {
-  EVENTS,
-  type Call,
-  CallStates,
-  type ControlStates,
-  type LogItem,
+    CallStates, EVENTS,
+    type Call, type ControlStates,
+    type LogItem
 } from '@storybook/instrumenter';
+import { useChannel, useParameter } from '@storybook/manager-api';
+import global from 'global';
+import * as React from 'react';
 
 import type { StoryId } from '@storybook/types';
 import { InteractionsPanel } from './components/InteractionsPanel';
@@ -33,7 +29,7 @@ const INITIAL_CONTROL_STATES = {
   start: false,
   back: false,
   goto: false,
-  next: false,
+  dev: false,
   end: false,
 };
 
@@ -159,7 +155,7 @@ export const Panel: React.FC<{ active: boolean }> = (props) => {
       start: () => emit(EVENTS.START, { storyId }),
       back: () => emit(EVENTS.BACK, { storyId }),
       goto: (callId: string) => emit(EVENTS.GOTO, { storyId, callId }),
-      next: () => emit(EVENTS.NEXT, { storyId }),
+      dev: () => emit(EVENTS.dev, { storyId }),
       end: () => emit(EVENTS.END, { storyId }),
       rerun: () => {
         setIsRerunAnimating(true);

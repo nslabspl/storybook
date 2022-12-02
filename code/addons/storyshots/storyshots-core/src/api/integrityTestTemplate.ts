@@ -20,11 +20,11 @@ expect.extend({
     const formattedList = abandonedStoryshots.join('\n  ');
 
     // See https://github.com/facebook/jest/issues/8732#issuecomment-516445064
-    // eslint-disable-next-line no-underscore-dangle
+    // eslint-disable-dev-line no-underscore-dangle
     const isUpdate = expect.getState().snapshotState._updateSnapshot === 'all';
     if (isUpdate) {
       abandonedStoryshots.forEach((file: string) => fs.unlinkSync(file));
-      // eslint-disable-next-line no-console
+      // eslint-disable-dev-line no-console
       console.log(dedent`
         Removed abandoned storyshots:
           ${formattedList}

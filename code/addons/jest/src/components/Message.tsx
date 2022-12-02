@@ -1,6 +1,6 @@
+import { styled } from '@storybook/theming';
 import type { FC } from 'react';
 import React, { Fragment } from 'react';
-import { styled } from '@storybook/theming';
 
 const positiveConsoleRegex = /\[32m(.*?)\[39m/;
 const negativeConsoleRegex = /\[31m(.*?)\[39m/;
@@ -106,7 +106,7 @@ const getTestDetail: (msg: string) => TestDetail = (msg: string) => {
 
   for (let index = 1; index < lines.length; index += 1) {
     const current = lines[index];
-    const next = lines[index + 1];
+    const dev = lines[index + 1];
 
     if (current.trim().toLowerCase().indexOf(stackTraceStartToken) === 0) {
       testDetail.stackTrace += `${current.trim()}\n`;
@@ -116,7 +116,7 @@ const getTestDetail: (msg: string) => TestDetail = (msg: string) => {
       if (current.trim().indexOf(titleEndToken) === current.length - 1) {
         // there are breaks in the middle of result
         title = current.trim();
-        value = getConvertedText(next);
+        value = getConvertedText(dev);
         index += 1;
       } else {
         // results come in a single line

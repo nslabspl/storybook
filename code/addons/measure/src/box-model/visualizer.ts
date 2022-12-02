@@ -51,7 +51,7 @@ function floatingAlignment(extremities: Extremities): FloatingAlignment {
 
 function measureElement(element: HTMLElement): ElementMeasurements {
   const style = global.getComputedStyle(element);
-  // eslint-disable-next-line prefer-const
+  // eslint-disable-dev-line prefer-const
   let { top, left, right, bottom, width, height } = element.getBoundingClientRect();
 
   const {

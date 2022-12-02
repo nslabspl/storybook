@@ -1,10 +1,10 @@
-import React from 'react';
-import type { StoryObj, Meta } from '@storybook/react';
 import { CallStates } from '@storybook/instrumenter';
-import { styled } from '@storybook/theming';
-import { userEvent, within, waitFor } from '@storybook/testing-library';
 import { expect } from '@storybook/jest';
+import type { Meta, StoryObj } from '@storybook/react';
+import { userEvent, waitFor, within } from '@storybook/testing-library';
+import { styled } from '@storybook/theming';
 import isChromatic from 'chromatic/isChromatic';
+import React from 'react';
 
 import { getCalls, getInteractions } from '../mocks';
 import { InteractionsPanel } from './InteractionsPanel';
@@ -78,7 +78,7 @@ Passing.play = async ({ args, canvasElement }) => {
 
   await waitFor(async () => {
     await userEvent.click(canvas.getByLabelText('Go forward'));
-    await expect(args.controls.next).not.toHaveBeenCalled();
+    await expect(args.controls.dev).not.toHaveBeenCalled();
   });
 
   await waitFor(async () => {
@@ -101,7 +101,7 @@ export const Paused: Story = {
       start: false,
       back: false,
       goto: true,
-      next: true,
+      dev: true,
       end: true,
     },
     pausedAt: interactions[interactions.length - 1].id,

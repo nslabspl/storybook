@@ -1,10 +1,10 @@
 # Storybook Controls Addon
 
-[Storybook](https://storybook.js.org) Controls gives you a graphical UI to interact with a component's arguments dynamically, without needing to code. It creates an addon panel next to your component examples ("stories"), so you can edit them live.
+[Storybook](https://storybook.js.org) Controls gives you a graphical UI to interact with a component's arguments dynamically, without needing to code. It creates an addon panel dev to your component examples ("stories"), so you can edit them live.
 
 [Framework Support](https://storybook.js.org/docs/react/api/frameworks-feature-support)
 
-![Screenshot](https://raw.githubusercontent.com/storybookjs/storybook/next/code/addons/controls/docs/media/addon-controls-hero.gif)
+![Screenshot](https://raw.githubusercontent.com/storybookjs/storybook/dev/code/addons/controls/docs/media/addon-controls-hero.gif)
 
 ## Installation
 
@@ -29,9 +29,9 @@ The usage is documented in the [documentation](https://storybook.js.org/docs/rea
 ## FAQs
 
 -  [Storybook Controls Addon](#storybook-controls-addon)
-  -  [Installation](#installation)
-  -  [Usage](#usage)
-  -  [FAQs](#faqs)
+-  [Installation](#installation)
+-  [Usage](#usage)
+-  [FAQs](#faqs)
     - [How will this replace addon-knobs?](#how-will-this-replace-addon-knobs)
     - [How do I migrate from addon-knobs?](#how-do-i-migrate-from-addon-knobs)
     - [My controls aren't being auto-generated. What should I do?](#my-controls-arent-being-auto-generated-what-should-i-do)
@@ -210,4 +210,4 @@ export const Template = (args) => <Button {...args} />
 </Story>
 ```
 
-For more info, see a full [Controls example in MDX for Vue](https://raw.githubusercontent.com/storybookjs/storybook/next/code/examples/vue-kitchen-sink/src/stories/addon-controls.stories.mdx).
+For more info, see a full [Controls example in MDX for Vue](https://raw.githubusercontent.com/storybookjs/storybook/dev/code/examples/vue-kitchen-sink/src/stories/addon-controls.stories.mdx).

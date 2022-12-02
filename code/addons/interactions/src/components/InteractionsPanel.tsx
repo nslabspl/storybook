@@ -1,8 +1,8 @@
-import * as React from 'react';
 import { AddonPanel, Link, Placeholder } from '@storybook/components';
-import { type Call, CallStates, type ControlStates } from '@storybook/instrumenter';
+import { CallStates, type Call, type ControlStates } from '@storybook/instrumenter';
 import { styled } from '@storybook/theming';
 import { transparentize } from 'polished';
+import * as React from 'react';
 
 import { Subnav } from './Subnav';
 
@@ -12,7 +12,7 @@ export interface Controls {
   start: (args: any) => void;
   back: (args: any) => void;
   goto: (args: any) => void;
-  next: (args: any) => void;
+  dev: (args: any) => void;
   end: (args: any) => void;
   rerun: (args: any) => void;
 }
@@ -104,7 +104,7 @@ export const InteractionsPanel: React.FC<InteractionsPanelProps> = React.memo(
                 controls={controls}
                 controlStates={controlStates}
                 status={
-                  // eslint-disable-next-line no-nested-ternary
+                  // eslint-disable-dev-line no-nested-ternary
                   isPlaying ? CallStates.ACTIVE : hasException ? CallStates.ERROR : CallStates.DONE
                 }
                 storyFileName={fileName}

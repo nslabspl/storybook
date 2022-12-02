@@ -1,17 +1,17 @@
 /* eslint-disable no-fallthrough */
-import type { ReactNode, FC } from 'react';
-import React, { Fragment, useEffect, useRef, memo } from 'react';
 import memoize from 'memoizerific';
+import type { FC, ReactNode } from 'react';
+import React, { Fragment, memo, useEffect, useRef } from 'react';
 
-import { styled, Global, type Theme, withTheme } from '@storybook/theming';
+import { Global, styled, withTheme, type Theme } from '@storybook/theming';
 
-import { Icons, IconButton, WithTooltip, TooltipLinkList } from '@storybook/components';
+import { IconButton, Icons, TooltipLinkList, WithTooltip } from '@storybook/components';
 
-import { useStorybookApi, useParameter, useAddonState } from '@storybook/manager-api';
-import { registerShortcuts } from './shortcuts';
-import { PARAM_KEY, ADDON_ID } from './constants';
+import { useAddonState, useParameter, useStorybookApi } from '@storybook/manager-api';
+import { ADDON_ID, PARAM_KEY } from './constants';
 import { MINIMAL_VIEWPORTS } from './defaults';
-import type { ViewportAddonParameter, ViewportMap, ViewportStyles, Styles } from './models';
+import type { Styles, ViewportAddonParameter, ViewportMap, ViewportStyles } from './models';
+import { registerShortcuts } from './shortcuts';
 
 interface ViewportItem {
   id: string;
@@ -140,7 +140,7 @@ export const ViewportTool: FC = memo(
     const api = useStorybookApi();
 
     if (!list.find((i) => i.id === defaultViewport)) {
-      // eslint-disable-next-line no-console
+      // eslint-disable-dev-line no-console
       console.warn(
         `Cannot find "defaultViewport" of "${defaultViewport}" in addon-viewport configs, please check the "viewports" setting in the configuration.`
       );

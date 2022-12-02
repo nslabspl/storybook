@@ -4,7 +4,7 @@
 
 <h1>Storybook Docs for React</h1>
 
-> migration guide: This page documents the method to configure storybook introduced recently in 5.3.0, consult the [migration guide](https://github.com/nslabspl/storybook/blob/next/MIGRATION.md) if you want to migrate to this format of configuring storybook.
+> migration guide: This page documents the method to configure storybook introduced recently in 5.3.0, consult the [migration guide](https://github.com/nslabspl/storybook/blob/dev/MIGRATION.md) if you want to migrate to this format of configuring storybook.
 
 Storybook Docs transforms your Storybook stories into world-class component documentation. Storybook Docs for React supports [DocsPage](../docs/docspage.md) for auto-generated docs, and [MDX](../docs/mdx.md) for rich long-form docs.
 
@@ -23,7 +23,7 @@ To learn more about Storybook Docs, read the [general documentation](../README.m
 First add the package. Make sure that the versions for your `@storybook/*` packages match:
 
 ```sh
-yarn add -D @storybook/addon-docs@next
+yarn add -D @storybook/addon-docs@dev
 ```
 
 Then add the following to your `.storybook/main.js` list of `addons`:

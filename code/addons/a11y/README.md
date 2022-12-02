@@ -4,14 +4,14 @@ This Storybook addon can be helpful to make your UI components more accessible.
 
 [Framework Support](https://storybook.js.org/docs/react/api/frameworks-feature-support)
 
-![Screenshot](https://raw.githubusercontent.com/storybookjs/storybook/next/code/addons/a11y/docs/screenshot.png)
+![Screenshot](https://raw.githubusercontent.com/storybookjs/storybook/dev/code/addons/a11y/docs/screenshot.png)
 
 ## Getting started
 
 First, install the addon.
 
 ```sh
-$ yarn add @storybook/addon-a11y --dev
+yarn add @storybook/addon-a11y --dev
 ```
 
 Add this line to your `main.js` file (create this file inside your Storybook config directory if needed).

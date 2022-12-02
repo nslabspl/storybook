@@ -1,15 +1,13 @@
 /// <reference types="node" />
 
-import { addons } from '@storybook/preview-api';
 import { FORCE_REMOUNT, STORY_RENDER_PHASE_CHANGED } from '@storybook/core-events';
-import type {
-  Renderer,
-  ArgsEnhancer,
-  PlayFunction,
-  PlayFunctionContext,
-  StepLabel,
-} from '@storybook/types';
 import { instrument } from '@storybook/instrumenter';
+import { addons } from '@storybook/preview-api';
+import type {
+    ArgsEnhancer,
+    PlayFunction,
+    PlayFunctionContext, Renderer, StepLabel
+} from '@storybook/types';
 import { ModuleMocker } from 'jest-mock';
 
 const JestMock = new ModuleMocker(global);
@@ -32,7 +30,7 @@ const addSpies = (id: string, val: any, key?: string): any => {
   try {
     if (Object.prototype.toString.call(val) === '[object Object]') {
       // We have to mutate the original object for this to survive HMR.
-      // eslint-disable-next-line no-restricted-syntax, no-param-reassign
+      // eslint-disable-dev-line no-restricted-syntax, no-param-reassign
       for (const [k, v] of Object.entries(val)) val[k] = addSpies(id, v, k);
       return val;
     }
