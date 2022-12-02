@@ -58,7 +58,7 @@ If you still need to configure jest you can use the resources mentioned below:
 
 > Note: If you use React 16, you'll need to follow [these additional instructions](https://github.com/facebook/react/issues/9102#issuecomment-283873039).
 >
-> Note: Make sure you have added the `json` extension to `moduleFileExtensions` in `jest.config.json`. If this is missing it leads to the [following error](https://github.com/storybookjs/storybook/issues/3728): `Cannot find module 'spdx-license-ids' from 'scan.js'`.
+> Note: Make sure you have added the `json` extension to `moduleFileExtensions` in `jest.config.json`. If this is missing it leads to the [following error](https://github.com/nslabspl/storybook/issues/3728): `Cannot find module 'spdx-license-ids' from 'scan.js'`.
 >
 > Note: Please make sure you are using `jsdom` as the testEnvironment on your jest config file.
 
@@ -66,7 +66,7 @@ If you still need to configure jest you can use the resources mentioned below:
 
 **NOTE**: if you are using Storybook 5.3's `main.js` to list story files, this is no longer needed.
 
-Sometimes it's useful to configure Storybook with Webpack's require.context feature. You could be loading stories [one of two ways](https://github.com/storybookjs/storybook/blob/release/5.3/docs/src/pages/basics/writing-stories/index.md#loading-stories).
+Sometimes it's useful to configure Storybook with Webpack's require.context feature. You could be loading stories [one of two ways](https://github.com/nslabspl/storybook/blob/release/5.3/docs/src/pages/basics/writing-stories/index.md#loading-stories).
 
 1. If you're using the `storiesOf` API, you can integrate it this way:
 
@@ -554,7 +554,7 @@ initStoryshots({
 });
 ```
 
-This can be useful if you want to separate the snapshots in directories next to each component. See an example [here](https://github.com/storybookjs/storybook/issues/892).
+This can be useful if you want to separate the snapshots in directories next to each component. See an example [here](https://github.com/nslabspl/storybook/issues/892).
 
 If you want to run all stories except stories of a specific kind, you can write an inverse regex which is true for all kinds except those with a specific word such as `DontTest`
 
@@ -710,7 +710,7 @@ components to ensure they do not error.
 
 ### `snapshotWithOptions(options)`
 
-Like the default, but allows you to specify a set of options for the test renderer. [See for example here](https://github.com/storybookjs/storybook/blob/b915b5439786e0edb17d7f5ab404bba9f7919381/examples/test-cra/src/storyshots.test.js#L14-L16).
+Like the default, but allows you to specify a set of options for the test renderer. [See for example here](https://github.com/nslabspl/storybook/blob/b915b5439786e0edb17d7f5ab404bba9f7919381/examples/test-cra/src/storyshots.test.js#L14-L16).
 
 ### `renderWithOptions(options)`
 
@@ -751,7 +751,7 @@ Take a snapshot of a shallow-rendered version of the component. Note that this o
 
 This is a class that generates snapshot's name based on the story (kind, story & filename) and vice versa.
 
-###### Example:
+###### Example
 
 Let's say we wanted to create a test function for shallow && multi-file snapshots:
 

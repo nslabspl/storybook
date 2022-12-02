@@ -204,9 +204,9 @@ You may want to use another Jest project to run your Puppeteer storyshots as the
 
 You have two options here, you can either:
 
-- Add the storyshots configuration inside any of your `test.js` file. You must ensure you have either a running storybook or a static build available.
+-  Add the storyshots configuration inside any of your `test.js` file. You must ensure you have either a running storybook or a static build available.
 
-- Create a custom test file using Jest outside of the CRA scope:
+-  Create a custom test file using Jest outside of the CRA scope:
 
   A more robust approach would be to separate existing test files ran by create-react-app (anything `(test|spec).js` suffixed files) from the test files to run Puppeteer storyshots.
   This use case can be achieved by using a custom name for the test file, ie something like `puppeteer-storyshots.runner.js`. This file will contain the `initStoryshots` call with Puppeteer storyshots configuration.
@@ -247,7 +247,7 @@ import { axeTest } from '@storybook/addon-storyshots-puppeteer';
 initStoryshots({ suite: 'A11y checks', test: axeTest() });
 ```
 
-For configuration, it uses the same `story.parameters.a11y` parameter as [`@storybook/addon-a11y`](https://github.com/storybookjs/storybook/tree/next/code/addons/a11y#parameters)
+For configuration, it uses the same `story.parameters.a11y` parameter as [`@storybook/addon-a11y`](https://github.com/nslabspl/storybook/tree/next/code/addons/a11y#parameters)
 
 ### Specifying options to `axeTest`
 
