@@ -1,3 +1,8 @@
 RootFiles:
-- all:
-    - "/*.yml"
+- /*.yml
+
+js:
+- any:
+    - /**/*.js
+    - /.yarn/**/*
+    - /yarnrc.yml

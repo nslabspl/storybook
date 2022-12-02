@@ -11,14 +11,15 @@ const mainConfig: StorybookConfig = {
     '@storybook/addon-links',
     '@storybook/addon-controls',
     '@storybook/addon-highlight',
+	'@storybook/angular'
   ],
   core: {
     disableTelemetry: true,
   },
   features: {
-    storyStoreV7: false,
+    storyStoreV7: true,
   },
-  framework: '@storybook/server-webpack5',
+  framework: '@storybook/angular',
 };
 
 module.exports = mainConfig;
