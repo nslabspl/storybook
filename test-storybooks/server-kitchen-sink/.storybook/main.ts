@@ -1,4 +1,4 @@
-import type { StorybookConfig } from '@storybook/server-webpack5';
+import { StorybookConfig } from '@storybook/server-webpack5';
 
 const mainConfig: StorybookConfig = {
 	stories: ["../stories/**/*.stories.@(json|yaml|yml)"],
@@ -17,7 +17,9 @@ const mainConfig: StorybookConfig = {
 		disableTelemetry: true,
 	},
 	features: {
-		storyStoreV7: process.env.NO_STORY_STORE_V7 !== "true",
+		// Please see https://github.com/chanzuckerberg/axe-storybook-testing/pull/54/files for details
+		//storyStoreV7: process.env.NO_STORY_STORE_V7 !== "true",
+		StoryStoreV7: false
 	},
 	framework: "@storybook/angular",
 };
