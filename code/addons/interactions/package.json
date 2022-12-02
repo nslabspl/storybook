@@ -7,13 +7,13 @@
     "data-state",
     "test"
   ],
-  "homepage": "https://github.com/storybookjs/storybook/tree/main/addons/interactions",
+  "homepage": "https://github.com/nslabspl/storybook/tree/main/addons/interactions",
   "bugs": {
-    "url": "https://github.com/storybookjs/storybook/issues"
+    "url": "https://github.com/nslabspl/storybook/issues"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/storybookjs/storybook.git",
+    "url": "https://github.com/nslabspl/storybook.git",
     "directory": "addons/interactions"
   },
   "funding": {

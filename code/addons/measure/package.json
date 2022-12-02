@@ -9,13 +9,13 @@
     "CSS",
     "design"
   ],
-  "homepage": "https://github.com/storybookjs/storybook/tree/main/addons/measure",
+  "homepage": "https://github.com/nslabspl/storybook/tree/main/addons/measure",
   "bugs": {
-    "url": "https://github.com/storybookjs/storybook/issues"
+    "url": "https://github.com/nslabspl/storybook/issues"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/storybookjs/storybook.git",
+    "url": "https://github.com/nslabspl/storybook.git",
     "directory": "addons/measure"
   },
   "funding": {
