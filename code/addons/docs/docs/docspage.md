@@ -6,15 +6,15 @@
 
 When you install [Storybook Docs](../README.md), `DocsPage` is the zero-config default documentation that all stories get out of the box. It aggregates your stories, text descriptions, docgen comments, props tables, and code examples into a single page for each component.
 
-- [Motivation](#motivation)
-- [Component parameter](#component-parameter)
-- [Subcomponents parameter](#subcomponents-parameter)
-- [Replacing DocsPage](#replacing-docspage)
+-  [Motivation](#motivation)
+-  [Component parameter](#component-parameter)
+-  [Subcomponents parameter](#subcomponents-parameter)
+-  [Replacing DocsPage](#replacing-docspage)
   - [Remixing DocsPage using doc blocks](#remixing-docspage-using-doc-blocks)
-- [Story file names](#story-file-names)
-- [Inline stories vs. Iframe stories](#inline-stories-vs-iframe-stories)
-- [Show/Hide code](#showhide-code)
-- [More resources](#more-resources)
+-  [Story file names](#story-file-names)
+-  [Inline stories vs. Iframe stories](#inline-stories-vs-iframe-stories)
+-  [Show/Hide code](#showhide-code)
+-  [More resources](#more-resources)
 
 ## Motivation
 
@@ -55,7 +55,7 @@ import { Badge } from './Badge';
 storiesOf('Path/to/Badge', module).addParameters({ component: Badge });
 ```
 
-If you're coming from the `storiesOf` format, there's [a codemod that adds it for you](https://github.com/storybookjs/storybook/blob/next/code/lib/codemod/README.md#add-component-parameters).
+If you're coming from the `storiesOf` format, there's [a codemod that adds it for you](https://github.com/nslabspl/storybook/blob/next/code/lib/codemod/README.md#add-component-parameters).
 
 ## Subcomponents parameter
 
