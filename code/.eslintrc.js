@@ -1,5 +1,4 @@
 const path = require('path');
-
 const scriptPath = path.join(__dirname, '..', 'scripts');
 
 module.exports = {
