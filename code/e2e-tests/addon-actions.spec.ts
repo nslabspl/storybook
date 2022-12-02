@@ -17,7 +17,6 @@ test.describe('addon-actions', () => {
     const root = sbPage.previewRoot();
     const button = root.locator('button', { hasText: 'Button' });
     await button.click();
-
     await sbPage.viewAddonPanel('Actions');
     const logItem = await page.locator('#storybook-panel-root #panel-tab-content', {
       hasText: 'onClick',

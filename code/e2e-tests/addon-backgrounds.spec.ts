@@ -15,7 +15,6 @@ test.describe('addon-backgrounds', () => {
 
     await sbPage.navigateToStory('example/button', 'primary');
     await sbPage.selectToolbar('[title="Change the background of the preview"]', '#dark');
-
     await expect(sbPage.getCanvasBodyElement()).toHaveCSS('background-color', 'rgb(51, 51, 51)');
   });
 
@@ -24,7 +23,6 @@ test.describe('addon-backgrounds', () => {
 
     await sbPage.navigateToStory('example/button', 'primary');
     await sbPage.selectToolbar('[title="Apply a grid to the preview"]');
-
     await expect(sbPage.getCanvasBodyElement()).toHaveCSS('background-image', /linear-gradient/);
   });
 });
