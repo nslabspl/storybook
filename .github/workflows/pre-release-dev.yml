@@ -3,8 +3,8 @@ name: "pre-release"
 
 on:
   push:
-    branches:
-      - "dev"
+   branches:
+   - "dev"
 
 jobs:
   pre-release:
@@ -12,17 +12,16 @@ jobs:
     runs-on: "ubuntu-latest"
 
     steps:
-      # ...
       - name: "Pre-releaser"
         run: |
-          echo "Creating dev release ( pre-release )"
+          echo "Creating dev release"
 
       - uses: "marvinpinto/action-automatic-releases@latest"
         with:
           repo_token: "${{ secrets.GITHUB_TOKEN }}"
           automatic_release_tag: "latest-dev"
           prerelease: true
-          title: "Development Build"
+          title: "Dev Build"
           files: |
             LICENSE.txt
             *.jar
