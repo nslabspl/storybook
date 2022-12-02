@@ -16,9 +16,9 @@ const mainConfig: StorybookConfig = {
     disableTelemetry: true,
   },
   features: {
-    storyStoreV7: false,
+    storyStoreV7: true,
   },
-  framework: '@storybook/server-webpack5',
+  framework: '@storybook/angular',
 };
 
 module.exports = mainConfig;
