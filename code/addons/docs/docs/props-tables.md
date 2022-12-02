@@ -6,16 +6,16 @@
 
 Storybook Docs automatically generates props tables for components in supported frameworks. This document is a consolidated summary of prop tables, provides instructions for reporting bugs, and list known limitations for each framework.
 
-- [Usage](#usage)
+-  [Usage](#usage)
   - [DocsPage](#docspage)
   - [MDX](#mdx)
-- [Controls](#controls)
-- [Customization](#customization)
+-  [Controls](#controls)
+-  [Customization](#customization)
   - [Customizing ArgTypes](#customizing-argtypes)
   - [Custom ArgTypes in MDX](#custom-argtypes-in-mdx)
-- [Reporting a bug](#reporting-a-bug)
-- [Known limitations](#known-limitations)
-- [More resources](#more-resources)
+-  [Reporting a bug](#reporting-a-bug)
+-  [Known limitations](#known-limitations)
+-  [More resources](#more-resources)
 
 ## Usage
 
@@ -254,11 +254,11 @@ This package relies on a variety of sub-packages to extract property information
 
 | Framework      | Underlying library                       | Docs                                             | Open issues                                                                                                                                                        |
 | -------------- | ---------------------------------------- | ------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| React          | `react-docgen` `react-docgen-typescript` | [Docs](../react/README.md#props-tables)          | [Open issues](https://github.com/storybookjs/storybook/issues?q=is%3Aopen+is%3Aissue+label%3A%22block%3A+props%22+label%3Abug+label%3A%22app%3A+react%22)          |
-| Vue            | `vue-docgen-api`                         | [Docs](../vue/README.md#props-tables)            | [Open issues](https://github.com/storybookjs/storybook/issues?q=is%3Aopen+is%3Aissue+label%3A%22block%3A+props%22+label%3Abug+label%3A%22app%3A+vue%22)            |
-| Angular        | `compodoc`                               | [Docs](../angular/README.md#props-tables)        | [Open issues](https://github.com/storybookjs/storybook/issues?q=is%3Aopen+is%3Aissue+label%3A%22block%3A+props%22+label%3Abug+label%3A%22app%3A+angular%22)        |
-| Web-components | `custom-elements.json`                   | [Docs](../web-components/README.md#props-tables) | [Open issues](https://github.com/storybookjs/storybook/issues?q=is%3Aopen+is%3Aissue+label%3A%22block%3A+props%22+label%3Abug+label%3A%22app%3A+web-components%22) |
-| Ember          | `yui-doc`                                | [Docs](../ember/README.md#props-tables)          | [Open issues](https://github.com/storybookjs/storybook/issues?q=is%3Aopen+is%3Aissue+label%3A%22block%3A+props%22+label%3Abug+label%3A%22app%3A+ember%22)          |
+| React          | `react-docgen` `react-docgen-typescript` | [Docs](../react/README.md#props-tables)          | [Open issues](https://github.com/nslabspl/storybook/issues?q=is%3Aopen+is%3Aissue+label%3A%22block%3A+props%22+label%3Abug+label%3A%22app%3A+react%22)          |
+| Vue            | `vue-docgen-api`                         | [Docs](../vue/README.md#props-tables)            | [Open issues](https://github.com/nslabspl/storybook/issues?q=is%3Aopen+is%3Aissue+label%3A%22block%3A+props%22+label%3Abug+label%3A%22app%3A+vue%22)            |
+| Angular        | `compodoc`                               | [Docs](../angular/README.md#props-tables)        | [Open issues](https://github.com/nslabspl/storybook/issues?q=is%3Aopen+is%3Aissue+label%3A%22block%3A+props%22+label%3Abug+label%3A%22app%3A+angular%22)        |
+| Web-components | `custom-elements.json`                   | [Docs](../web-components/README.md#props-tables) | [Open issues](https://github.com/nslabspl/storybook/issues?q=is%3Aopen+is%3Aissue+label%3A%22block%3A+props%22+label%3Abug+label%3A%22app%3A+web-components%22) |
+| Ember          | `yui-doc`                                | [Docs](../ember/README.md#props-tables)          | [Open issues](https://github.com/nslabspl/storybook/issues?q=is%3Aopen+is%3Aissue+label%3A%22block%3A+props%22+label%3Abug+label%3A%22app%3A+ember%22)          |
 
 ## More resources
 

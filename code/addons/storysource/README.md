@@ -6,10 +6,10 @@ This addon is used to show stories source in the addon panel.
 
 ![Storysource Demo](https://raw.githubusercontent.com/storybookjs/storybook/next/code/addons/storysource/docs/demo.gif)
 
-- [Getting Started](#getting-started)
+-  [Getting Started](#getting-started)
   - [Install using preset](#install-using-preset)
-- [Theming](#theming)
-- [Displaying full source](#displaying-full-source)
+-  [Theming](#theming)
+-  [Displaying full source](#displaying-full-source)
 
 ## Getting Started
 
@@ -52,7 +52,7 @@ module.exports = {
 };
 ```
 
-To customize the `source-loader`, pass `loaderOptions`. Valid configurations are documented in the [`source-loader` README](https://github.com/storybookjs/storybook/tree/main/lib/source-loader/README.md#options).
+To customize the `source-loader`, pass `loaderOptions`. Valid configurations are documented in the [`source-loader` README](https://github.com/nslabspl/storybook/tree/main/lib/source-loader/README.md#options).
 
 ## Theming
 
