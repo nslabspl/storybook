@@ -1,9 +1,9 @@
+import { MDXProvider } from '@mdx-js/react';
+import { AnchorMdx, CodeOrSourceMdx, Docs, HeadersMdx } from '@storybook/blocks';
+import { components as htmlComponents } from '@storybook/components';
+import type { DocsContextProps, DocsRenderFunction, Parameters, Renderer } from '@storybook/types';
 import React from 'react';
 import ReactDOM from 'react-dom';
-import type { Renderer, Parameters, DocsContextProps, DocsRenderFunction } from '@storybook/types';
-import { components as htmlComponents } from '@storybook/components';
-import { Docs, CodeOrSourceMdx, AnchorMdx, HeadersMdx } from '@storybook/blocks';
-import { MDXProvider } from '@mdx-js/react';
 
 // TS doesn't like that we export a component with types that it doesn't know about (TS4203)
 export const defaultComponents: Record<string, any> = {
@@ -27,7 +27,7 @@ export class DocsRenderer<TRenderer extends Renderer> {
     ): void => {
       // Use a random key to force the container to re-render each time we call `renderDocs`
       //   TODO: do we still need this? It was needed for angular (legacy) inline rendering:
-      //   https://github.com/storybookjs/storybook/pull/16149
+      //   https://github.com/nslabspl/storybook/pull/16149
       const components = {
         ...defaultComponents,
         ...docsParameter?.components,

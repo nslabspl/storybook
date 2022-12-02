@@ -4,7 +4,7 @@
 
 <h1>Storybook Docs for Vue</h1>
 
-> migration guide: This page documents the method to configure storybook introduced recently in 5.3.0, consult the [migration guide](https://github.com/storybookjs/storybook/blob/next/MIGRATION.md) if you want to migrate to this format of configuring storybook.
+> migration guide: This page documents the method to configure storybook introduced recently in 5.3.0, consult the [migration guide](https://github.com/nslabspl/storybook/blob/next/MIGRATION.md) if you want to migrate to this format of configuring storybook.
 
 Storybook Docs transforms your Storybook stories into world-class component documentation. Storybook Docs for Vue supports [DocsPage](../docs/docspage.md) for auto-generated docs, and [MDX](../docs/mdx.md) for rich long-form docs.
 
@@ -129,7 +129,7 @@ Some **markdown** description, or whatever you want.
 <ArgsTable of={InfoButton} />
 ```
 
-Yes, it's redundant to declare `component` twice. [Coming soon](https://github.com/storybookjs/storybook/issues/8685).
+Yes, it's redundant to declare `component` twice. [Coming soon](https://github.com/nslabspl/storybook/issues/8685).
 
 ## Inline Stories
 
