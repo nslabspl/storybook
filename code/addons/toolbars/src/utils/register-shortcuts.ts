@@ -3,18 +3,18 @@ import { ADDON_ID } from '../constants';
 import type { ToolbarShortcutConfig } from '../types';
 
 interface Shortcuts {
-  next: ToolbarShortcutConfig & { action: () => void };
+  dev: ToolbarShortcutConfig & { action: () => void };
   previous: ToolbarShortcutConfig & { action: () => void };
   reset: ToolbarShortcutConfig & { action: () => void };
 }
 
 export const registerShortcuts = async (api: API, id: string, shortcuts: Shortcuts) => {
-  if (shortcuts && shortcuts.next) {
+  if (shortcuts && shortcuts.dev) {
     await api.setAddonShortcut(ADDON_ID, {
-      label: shortcuts.next.label,
-      defaultShortcut: shortcuts.next.keys,
-      actionName: `${id}:next`,
-      action: shortcuts.next.action,
+      label: shortcuts.dev.label,
+      defaultShortcut: shortcuts.dev.keys,
+      actionName: `${id}:dev`,
+      action: shortcuts.dev.action,
     });
   }
 

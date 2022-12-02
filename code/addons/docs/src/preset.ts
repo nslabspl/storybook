@@ -77,7 +77,7 @@ async function webpack(
 
       To update your configuration, please see migration instructions here:
 
-      https://github.com/nslabspl/storybook/blob/next/MIGRATION.md#dropped-source-loader--storiesof-static-snippets
+      https://github.com/nslabspl/storybook/blob/dev/MIGRATION.md#dropped-source-loader--storiesof-static-snippets
     `);
   }
 
@@ -107,7 +107,7 @@ async function webpack(
     ...webpackConfig,
     plugins: [
       ...(webpackConfig.plugins || []),
-      // eslint-disable-next-line global-require
+      // eslint-disable-dev-line global-require
       ...(csfPluginOptions ? [require('@storybook/csf-plugin').webpack(csfPluginOptions)] : []),
     ],
 

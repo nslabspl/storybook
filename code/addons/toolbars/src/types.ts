@@ -1,7 +1,7 @@
 import type { IconsProps } from '@storybook/components';
 import type { InputType } from '@storybook/types';
 
-export type ToolbarShortcutType = 'next' | 'previous' | 'reset';
+export type ToolbarShortcutType = 'dev' | 'previous' | 'reset';
 
 export type ToolbarItemType = 'item' | 'reset';
 

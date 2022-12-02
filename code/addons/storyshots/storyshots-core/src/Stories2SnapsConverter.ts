@@ -44,7 +44,7 @@ export class Stories2SnapsConverter {
     const { fileName, kind } = context;
 
     if (!fileName) {
-      // eslint-disable-next-line no-console
+      // eslint-disable-dev-line no-console
       console.warn(
         dedent`
           Storybook was unable to detect filename for stories of kind "${kind}".

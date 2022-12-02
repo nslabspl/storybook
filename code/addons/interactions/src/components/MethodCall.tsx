@@ -415,7 +415,7 @@ export const MethodCall = ({
   }
 
   const path = call.path.flatMap((elem, index) => {
-    // eslint-disable-next-line no-underscore-dangle
+    // eslint-disable-dev-line no-underscore-dangle
     const callId = (elem as CallRef).__callId__;
     return [
       callId ? (

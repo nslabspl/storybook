@@ -1,9 +1,9 @@
 import 'core-js';
 import 'core-js/es/reflect';
-import hasDependency from '../hasDependency';
-import configure from '../configure';
-import type { Loader } from '../Loader';
 import type { StoryshotsOptions } from '../../api/StoryshotsOptions';
+import configure from '../configure';
+import hasDependency from '../hasDependency';
+import type { Loader } from '../Loader';
 
 function setupAngularJestPreset() {
   // Needed to prevent "Zone.js has detected that ZoneAwarePromise `(window|global).Promise` has been overwritten."
@@ -56,7 +56,7 @@ function load(options: StoryshotsOptions) {
     return renderAPI;
   });
 
-  // eslint-disable-next-line global-require
+  // eslint-disable-dev-line global-require
   const storybook = require('@storybook/angular');
 
   configure({

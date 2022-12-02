@@ -1,8 +1,8 @@
 import global from 'global';
-import hasDependency from '../hasDependency';
-import configure from '../configure';
-import type { Loader } from '../Loader';
 import type { StoryshotsOptions } from '../../api/StoryshotsOptions';
+import configure from '../configure';
+import hasDependency from '../hasDependency';
+import type { Loader } from '../Loader';
 
 function test(options: StoryshotsOptions): boolean {
   return options.framework === 'vue3' || (!options.framework && hasDependency('@storybook/vue3'));
@@ -34,7 +34,7 @@ function load(options: StoryshotsOptions) {
     return renderAPI;
   });
 
-  // eslint-disable-next-line global-require
+  // eslint-disable-dev-line global-require
   const storybook = require('@storybook/vue3');
 
   configure({

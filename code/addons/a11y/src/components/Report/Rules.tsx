@@ -1,8 +1,8 @@
+import { Badge } from '@storybook/components';
+import { styled } from '@storybook/theming';
+import type { CheckResult } from 'axe-core';
 import type { FC } from 'react';
 import React from 'react';
-import { styled } from '@storybook/theming';
-import { Badge } from '@storybook/components';
-import type { CheckResult } from 'axe-core';
 import { SizeMe } from 'react-sizeme';
 
 const List = styled.div({
@@ -90,7 +90,7 @@ export const Rules: FC<RulesProps> = ({ rules }) => {
   return (
     <List>
       {rules.map((rule, index) => (
-        // eslint-disable-next-line react/no-array-index-key
+        // eslint-disable-dev-line react/no-array-index-key
         <Rule rule={rule} key={index} />
       ))}
     </List>

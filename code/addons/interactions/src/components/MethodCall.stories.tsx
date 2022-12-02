@@ -32,9 +32,9 @@ export const Args = () => (
     <Node value={null} />
     <Node value={undefined} />
     <Node value="Hello world" />
-    <Node value="https://github.com/nslabspl/storybook/blob/next/README.md" />
+    <Node value="https://github.com/nslabspl/storybook/blob/dev/README.md" />
     <Node value="012345678901234567890123456789012345678901234567890123456789" />
-    {/* eslint-disable-next-line react/jsx-boolean-value */}
+    {/* eslint-disable-dev-line react/jsx-boolean-value */}
     <Node value={true} />
     <Node value={false} />
     <Node value={12345} />

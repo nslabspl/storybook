@@ -1,11 +1,11 @@
-import React, { Component } from 'react';
 import { dequal as deepEqual } from 'dequal';
+import React, { Component } from 'react';
 
-import type { API } from '@storybook/manager-api';
 import { STORY_CHANGED } from '@storybook/core-events';
+import type { API } from '@storybook/manager-api';
 
-import { ActionLogger as ActionLoggerComponent } from '../../components/ActionLogger';
 import { EVENT_ID } from '../..';
+import { ActionLogger as ActionLoggerComponent } from '../../components/ActionLogger';
 import type { ActionDisplay } from '../../models';
 
 interface ActionLoggerProps {
@@ -65,10 +65,10 @@ export default class ActionLogger extends Component<ActionLoggerProps, ActionLog
       const actions = [...prevState.actions];
       const previous = actions.length && actions[0];
       if (previous && safeDeepEqual(previous.data, action.data)) {
-        // eslint-disable-next-line no-plusplus
+        // eslint-disable-dev-line no-plusplus
         previous.count++;
       } else {
-        // eslint-disable-next-line no-param-reassign
+        // eslint-disable-dev-line no-param-reassign
         action.count = 1;
         actions.unshift(action);
       }

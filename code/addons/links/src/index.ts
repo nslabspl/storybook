@@ -6,7 +6,7 @@ let hasWarned = false;
 
 export function LinkTo(): null {
   if (!hasWarned) {
-    // eslint-disable-next-line no-console
+    // eslint-disable-dev-line no-console
     console.error(dedent`
       LinkTo has moved to addon-links/react:
       import LinkTo from '@storybook/addon-links/react';
@@ -16,7 +16,7 @@ export function LinkTo(): null {
   return null;
 }
 
-export { linkTo, hrefTo, withLinks, navigate } from './utils';
+export { hrefTo, linkTo, navigate, withLinks } from './utils';
 
 if (module && module.hot && module.hot.decline) {
   module.hot.decline();

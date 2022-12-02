@@ -13,11 +13,11 @@ Storybook Docs [provides basic support for all non-RN Storybook view layers](../
 
 Your framework might need framework-specific configuration. This could include adding extra webpack loaders or global decorators/story parameters.
 
-Addon-docs handles this kind of customization by file naming convention. Its [common preset](https://github.com/nslabspl/storybook/blob/next/addons/docs/src/frameworks/common/preset.ts) does this by looking for files `../<framework>/{preset,config}.[tj]sx?`, where `<framework>` is the framework identifier, e.g. `vue`, `angular`, `react`, etc.
+Addon-docs handles this kind of customization by file naming convention. Its [common preset](https://github.com/nslabspl/storybook/blob/dev/addons/docs/src/frameworks/common/preset.ts) does this by looking for files `../<framework>/{preset,config}.[tj]sx?`, where `<framework>` is the framework identifier, e.g. `vue`, `angular`, `react`, etc.
 
 For example, consider Storybook Docs for Vue, which needs `vue-docgen-loader` in its webpack config, and also has custom extraction functions for [props tables](#props-tables) and [component descriptions](#component-descriptions).
 
-For webpack configuration, Docs for Vue defines [preset.ts](https://github.com/nslabspl/storybook/blob/next/addons/docs/src/frameworks/vue/preset.ts), which follows the [preset](https://storybook.js.org/docs/vue/api/presets) file structure:
+For webpack configuration, Docs for Vue defines [preset.ts](https://github.com/nslabspl/storybook/blob/dev/addons/docs/src/frameworks/vue/preset.ts), which follows the [preset](https://storybook.js.org/docs/vue/api/presets) file structure:
 
 ```
 export function webpack(webpackConfig: any = {}, options: any = {}) {
@@ -32,7 +32,7 @@ export function webpack(webpackConfig: any = {}, options: any = {}) {
 
 This appends `vue-docgen-loader` to the existing configuration, which at this point will also include modifications made by the common preset.
 
-For props tables and descriptions, both of which are described in more detail below, it defines a file [config.jsx](https://github.com/nslabspl/storybook/blob/next/addons/docs/src/frameworks/vue/config.jsx).
+For props tables and descriptions, both of which are described in more detail below, it defines a file [config.jsx](https://github.com/nslabspl/storybook/blob/dev/addons/docs/src/frameworks/vue/config.jsx).
 
 ## Arg tables
 
@@ -61,7 +61,7 @@ export interface ArgTypes {
 }
 ```
 
-For more information on what this generation looks like, see the [controls generation docs](https://github.com/nslabspl/storybook/blob/next/addons/controls/README.md#my-controls-arent-being-auto-generated-what-should-i-do).
+For more information on what this generation looks like, see the [controls generation docs](https://github.com/nslabspl/storybook/blob/dev/addons/controls/README.md#my-controls-arent-being-auto-generated-what-should-i-do).
 
 For React and Vue, the extraction works as follows:
 
@@ -141,7 +141,7 @@ A few key points from the above snippet:
 - The returned snippet string is emitted on Storybook's channel through **channel.emit()** and subsequently consumed up by the Source block for any given story, if it exists.
 
 <div class="aside">
- To learn more and see how it's implemented in context, check out <a href="https://github.com/nslabspl/storybook/blob/next/addons/docs/src/frameworks/react/jsxDecorator.tsx">the code</a> .
+ To learn more and see how it's implemented in context, check out <a href="https://github.com/nslabspl/storybook/blob/dev/addons/docs/src/frameworks/react/jsxDecorator.tsx">the code</a> .
 </div>
 
 Now we need a way to configure how it's displayed in the UI:
@@ -154,7 +154,7 @@ export const decorators = [jsxDecorator];
 This configures the `jsxDecorator` to be run on every story.
 
 <div class="aside">
- To learn more and see how it's implemented in context, check out <a href="https://github.com/nslabspl/storybook/blob/next/addons/docs/src/frameworks/react/jsxDecorator.tsx">the code</a> .
+ To learn more and see how it's implemented in context, check out <a href="https://github.com/nslabspl/storybook/blob/dev/addons/docs/src/frameworks/react/jsxDecorator.tsx">the code</a> .
 </div>
 
 ## More resources

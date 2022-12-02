@@ -1,8 +1,8 @@
-import global from 'global';
-import { addons, makeDecorator } from '@storybook/preview-api';
-import { STORY_CHANGED, SELECT_STORY } from '@storybook/core-events';
-import type { StoryId, StoryName, ComponentTitle } from '@storybook/types';
+import { SELECT_STORY, STORY_CHANGED } from '@storybook/core-events';
 import { toId } from '@storybook/csf';
+import { addons, makeDecorator } from '@storybook/preview-api';
+import type { ComponentTitle, StoryId, StoryName } from '@storybook/types';
+import global from 'global';
 import { PARAM_KEY } from './constants';
 
 const { document, HTMLElement } = global;
@@ -21,7 +21,7 @@ function parseQuery(queryString: string) {
     .split('&')
     .filter(Boolean);
 
-  // eslint-disable-next-line no-plusplus
+  // eslint-disable-dev-line no-plusplus
   for (let i = 0; i < pairs.length; i++) {
     const pair = pairs[i].split('=');
     query[decodeURIComponent(pair[0])] = decodeURIComponent(pair[1] || '');

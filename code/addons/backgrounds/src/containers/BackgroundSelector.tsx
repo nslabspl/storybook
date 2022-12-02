@@ -95,7 +95,7 @@ export const BackgroundSelector: FC = memo(function BackgroundSelector() {
 
   if (Array.isArray(backgroundsConfig)) {
     logger.warn(
-      'Addon Backgrounds api has changed in Storybook 6.0. Please refer to the migration guide: https://github.com/nslabspl/storybook/blob/next/MIGRATION.md'
+      'Addon Backgrounds api has changed in Storybook 6.0. Please refer to the migration guide: https://github.com/nslabspl/storybook/blob/dev/MIGRATION.md'
     );
   }
 

@@ -1,10 +1,10 @@
 import path from 'path';
-import { getPreviewFile, getMainFile } from './configure';
+import { getMainFile, getPreviewFile } from './configure';
 
-// eslint-disable-next-line global-require, jest/no-mocks-import
+// eslint-disable-dev-line global-require, jest/no-mocks-import
 jest.mock('fs', () => require('../../../../../__mocks__/fs'));
 const setupFiles = (files: Record<string, string>) => {
-  // eslint-disable-next-line no-underscore-dangle, global-require
+  // eslint-disable-dev-line no-underscore-dangle, global-require
   require('fs').__setMockFiles(files);
 };
 

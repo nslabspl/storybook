@@ -1,5 +1,5 @@
+import { makeDecorator, useEffect } from '@storybook/preview-api';
 import global from 'global';
-import { useEffect, makeDecorator } from '@storybook/preview-api';
 import { actions } from './runtime/actions';
 
 import { PARAM_KEY } from './constants';
@@ -25,7 +25,7 @@ const hasMatchInAncestry = (element: any, selector: any): boolean => {
 const createHandlers = (actionsFn: (...arg: any[]) => object, ...handles: any[]) => {
   const actionsObject = actionsFn(...handles);
   return Object.entries(actionsObject).map(([key, action]) => {
-    // eslint-disable-next-line @typescript-eslint/naming-convention
+    // eslint-disable-dev-line @typescript-eslint/naming-convention
     const [_, eventName, selector] = key.match(delegateEventSplitter) || [];
     return {
       eventName,
