@@ -3,7 +3,7 @@ name: Unit tests
 on:
   push:
     branches:
-      - release
+      - dev
   pull_request:
     types: [opened, synchronize, reopened]
 
