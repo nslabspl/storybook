@@ -28,10 +28,10 @@ The usage is documented in the [documentation](https://storybook.js.org/docs/rea
 
 ## FAQs
 
-- [Storybook Controls Addon](#storybook-controls-addon)
-  - [Installation](#installation)
-  - [Usage](#usage)
-  - [FAQs](#faqs)
+-  [Storybook Controls Addon](#storybook-controls-addon)
+  -  [Installation](#installation)
+  -  [Usage](#usage)
+  -  [FAQs](#faqs)
     - [How will this replace addon-knobs?](#how-will-this-replace-addon-knobs)
     - [How do I migrate from addon-knobs?](#how-do-i-migrate-from-addon-knobs)
     - [My controls aren't being auto-generated. What should I do?](#my-controls-arent-being-auto-generated-what-should-i-do)
@@ -149,7 +149,7 @@ Basic.args = {
 
 The `argTypes` annotation (which can also be applied to individual stories if needed), gives Storybook the hints it needs to generate controls in these unsupported cases. See [control annotations](https://storybook.js.org/docs/react/essentials/controls#annotation) for a full list of control types.
 
-It's also possible that your Storybook is misconfigured. If you think this might be the case, please search through Storybook's [Github issues](https://github.com/storybookjs/storybook/issues), and file a new issue if you don't find one that matches your use case.
+It's also possible that your Storybook is misconfigured. If you think this might be the case, please search through Storybook's [Github issues](https://github.com/nslabspl/storybook/issues), and file a new issue if you don't find one that matches your use case.
 
 ### How can I disable controls for certain fields on a particular story?
 

@@ -1,5 +1,5 @@
-import globalThis from 'global';
 import type { PartialStoryFn, StoryContext } from '@storybook/types';
+import globalThis from 'global';
 
 export default {
   component: null,
@@ -9,7 +9,7 @@ export default {
   ],
 };
 
-// https://github.com/storybookjs/storybook/issues/14752
+// https://github.com/nslabspl/storybook/issues/14752
 export const MissingRadioOptions = {
   argTypes: { invalidRadio: { control: 'radio' } },
   args: { invalidRadio: 'someValue' },

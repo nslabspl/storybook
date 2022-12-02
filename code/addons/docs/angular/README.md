@@ -4,7 +4,7 @@
 
 <h1>Storybook Docs for Angular</h1>
 
-> migration guide: This page documents the method to configure storybook introduced recently in 5.3.0, consult the [migration guide](https://github.com/storybookjs/storybook/blob/next/MIGRATION.md) if you want to migrate to this format of configuring storybook.
+> migration guide: This page documents the method to configure storybook introduced recently in 5.3.0, consult the [migration guide](https://github.com/nslabspl/storybook/blob/next/MIGRATION.md) if you want to migrate to this format of configuring storybook.
 
 Storybook Docs transforms your Storybook stories into world-class component documentation. Storybook Docs for Angular supports [DocsPage](../docs/docspage.md) for auto-generated docs, and [MDX](../docs/mdx.md) for rich long-form docs.
 
@@ -60,7 +60,7 @@ Then you'll need to configure Compodoc to generate a `documentation.json` file. 
 }
 ```
 
-Unfortunately, it's not currently possible to update this dynamically as you edit your components, but [there's an open issue](https://github.com/storybookjs/storybook/issues/8672) to support this with improvements to Compodoc.
+Unfortunately, it's not currently possible to update this dynamically as you edit your components, but [there's an open issue](https://github.com/nslabspl/storybook/issues/8672) to support this with improvements to Compodoc.
 
 Next, add the following to `.storybook/preview.ts` to load the Compodoc-generated file:
 
@@ -132,7 +132,7 @@ Some **markdown** description, or whatever you want.
 <ArgsTable of={AppComponent} />
 ```
 
-Yes, it's redundant to declare `component` twice. [Coming soon](https://github.com/storybookjs/storybook/issues/8673).
+Yes, it's redundant to declare `component` twice. [Coming soon](https://github.com/nslabspl/storybook/issues/8673).
 
 Also, to use the `Props` doc block, you need to set up Compodoc, [as described above](#docspage).
 
