@@ -17902,7 +17902,7 @@ __metadata:
   resolution: "git-up@npm:4.0.5"
   dependencies:
     is-ssh: ^1.3.0
-    parse-url: ^6.0.0
+    parse-url: 8.1.0
   checksum: 8141b99734ed64f21946c3645324ebad010dd83d1e9f8fe1230686604ded8376cda9ae7859500712f576fe281d61edba955f11a8e63ba1e1813208e1fdcf6813
   languageName: node
   linkType: hard
@@ -25573,9 +25573,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"parse-url@npm:^6.0.0":
-  version: 6.0.5
-  resolution: "parse-url@npm:6.0.5"
+"parse-url@npm:8.1.0":
+  version: 8.1.0
+  resolution: "parse-url@npm:8.1.0"
   dependencies:
     is-ssh: ^1.3.0
     normalize-url: ^6.1.0
