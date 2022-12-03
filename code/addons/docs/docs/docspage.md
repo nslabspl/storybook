@@ -1,5 +1,5 @@
 <center>
-  <img src="https://raw.githubusercontent.com/storybookjs/storybook/master/addons/docs/docs/media/docspage-hero.png" width="100%" />
+  <img src="https://raw.githubusercontent.com/nslabspl/storybook/master/addons/docs/docs/media/docspage-hero.png" width="100%" />
 </center>
 
 <h1>Storybook DocsPage</h1>

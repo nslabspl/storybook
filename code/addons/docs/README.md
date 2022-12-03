@@ -1,5 +1,5 @@
 <center>
-  <img src="https://raw.githubusercontent.com/storybookjs/storybook/main/addons/docs/docs/media/hero.png" width="100%" />
+  <img src="https://raw.githubusercontent.com/nslabspl/storybook/main/addons/docs/docs/media/hero.png" width="100%" />
 </center>
 
 # Storybook Docs
@@ -17,15 +17,15 @@ Just like Storybook, Docs supports every major view layer including React, Vue, 
 
 Read on to learn more:
 
-- [Storybook Docs](#storybook-docs)
-- [DocsPage](#docspage)
-- [MDX](#mdx)
-- [Framework support](#framework-support)
-- [Installation](#installation)
+-  [Storybook Docs](#storybook-docs)
+-  [DocsPage](#docspage)
+-  [MDX](#mdx)
+-  [Framework support](#framework-support)
+-  [Installation](#installation)
   - [Be sure to check framework specific installation needs](#be-sure-to-check-framework-specific-installation-needs)
-- [Preset options](#preset-options)
-- [TypeScript configuration](#typescript-configuration)
-- [More resources](#more-resources)
+-  [Preset options](#preset-options)
+-  [TypeScript configuration](#typescript-configuration)
+-  [More resources](#more-resources)
 
 ## DocsPage
 
@@ -34,7 +34,7 @@ When you [install Docs](#installation), every story gets a `DocsPage`. `DocsPage
 Click on the `Docs` tab to see it:
 
 <center>
-  <img src="https://raw.githubusercontent.com/storybookjs/storybook/main/addons/docs/docs/media/docs-tab.png" width="100%" />
+  <img src="https://raw.githubusercontent.com/nslabspl/storybook/main/addons/docs/docs/media/docs-tab.png" width="100%" />
 </center>
 
 For more information on how it works, see the [`DocsPage` reference](https://github.com/nslabspl/storybook/blob/next/code/addons/docs/docs/docspage.md).
@@ -71,7 +71,7 @@ markdown documentation.
 And here's how that's rendered in Storybook:
 
 <center>
-  <img src="https://raw.githubusercontent.com/storybookjs/storybook/main/addons/docs/docs/media/mdx-simple.png" width="100%" />
+  <img src="https://raw.githubusercontent.com/nslabspl/storybook/main/addons/docs/docs/media/mdx-simple.png" width="100%" />
 </center>
 
 For more information on `MDX`, see the [`MDX` reference](https://github.com/nslabspl/storybook/blob/next/code/addons/docs/docs/mdx.md).

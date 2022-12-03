@@ -5,7 +5,7 @@ need to code. It creates an addon panel dev to your component examples ("stories
 
 [Framework Support](https://storybook.js.org/docs/react/api/frameworks-feature-support)
 
-![Screenshot](https://raw.githubusercontent.com/storybookjs/storybook/dev/code/addons/controls/docs/media/addon-controls-hero.gif)
+![Screenshot](https://raw.githubusercontent.com/nslabspl/storybook/dev/code/addons/controls/docs/media/addon-controls-hero.gif)
 
 ## Installation
 
