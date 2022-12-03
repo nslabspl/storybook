@@ -24,6 +24,7 @@ const run = async ({ cwd, flags }: { cwd: string; flags: string[] }) => {
 	const reset = hasFlag(flags, 'reset');
 	const watch = hasFlag(flags, 'watch');
 	const optimized = hasFlag(flags, 'optimized');
+	const donotmimify = hasFlag(flags, 'false');
 
 	if (reset) {
 		await fs.emptyDir(join(process.cwd(), 'dist'));
@@ -83,9 +84,9 @@ const run = async ({ cwd, flags }: { cwd: string; flags: string[] }) => {
 				c.logLevel = 'error';
 				c.platform = platform || 'browser';
 				c.legalComments = 'none';
-				c.minifyWhitespace = optimized;
-				c.minifyIdentifiers = false;
-				c.minifySyntax = optimized;
+				c.minifyWhitespace = donotmimify;
+				c.minifyIdentifiers = donotmimify;
+				c.minifySyntax = donotmimify;
 				/* eslint-enable no-param-reassign */
 			},
 		}),
@@ -107,9 +108,9 @@ const run = async ({ cwd, flags }: { cwd: string; flags: string[] }) => {
 				c.logLevel = 'error';
 				c.platform = 'node';
 				c.legalComments = 'none';
-				c.minifyWhitespace = optimized;
-				c.minifyIdentifiers = optimized;
-				c.minifySyntax = optimized;
+				c.minifyWhitespace = donotmimify;
+				c.minifyIdentifiers = donotmimify;
+				c.minifySyntax = donotmimify;
 				/* eslint-enable no-param-reassign */
 			},
 		}),

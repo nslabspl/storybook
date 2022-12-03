@@ -8,7 +8,6 @@ import slash from 'slash';
 import { exec } from '../utils/exec';
 
 const hasFlag = (flags: string[], name: string) => !!flags.find((s) => s.startsWith(`--${name}`));
-
 const run = async ({ cwd, flags }: { cwd: string; flags: string[] }) => {
   const {
     name,
@@ -17,6 +16,7 @@ const run = async ({ cwd, flags }: { cwd: string; flags: string[] }) => {
     bundler: { entries, pre, post, shim },
   } = await fs.readJson(join(cwd, 'package.json'));
 
+  const donotmimify = hasFlag(flags, 'false');
   const optimized = hasFlag(flags, 'optimized');
   const tsnodePath = join(__dirname, '..', 'node_modules', '.bin', 'ts-node');
 
@@ -27,7 +27,6 @@ const run = async ({ cwd, flags }: { cwd: string; flags: string[] }) => {
   await Promise.all([
     ...entries.map(async (file: string) => {
       const { name: entryName } = parse(file);
-
       const dtsPathName = join(process.cwd(), 'dist', `${entryName}.d.ts`);
       const mjsPathName = join(process.cwd(), 'dist', `${entryName}.mjs`);
 
@@ -64,9 +63,9 @@ const run = async ({ cwd, flags }: { cwd: string; flags: string[] }) => {
         /* eslint-disable no-param-reassign */
         c.platform = 'node';
         c.legalComments = 'none';
-        c.minifyWhitespace = optimized;
-        c.minifyIdentifiers = optimized;
-        c.minifySyntax = optimized;
+        c.minifyWhitespace = donotmimify;
+        c.minifyIdentifiers = donotmimify;
+        c.minifySyntax = donotmimify;
         /* eslint-enable no-param-reassign */
       },
     }),
