@@ -1,13 +1,10 @@
 const { spawn } = require('child_process');
 const { join } = require('path');
 const { existsSync } = require('fs');
-
 const logger = console;
-
 const checkDependencies = async () => {
   const scriptsPath = join(__dirname, '..');
   const codePath = join(__dirname, '..', '..', 'code');
-
   const tasks = [];
 
   if (!existsSync(join(scriptsPath, 'node_modules'))) {
