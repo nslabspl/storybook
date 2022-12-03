@@ -1,7 +1,7 @@
 import { $ } from 'zx';
 
 /**
- * Git add everything in the directory this method is called and commit all the files
+ * Git add everything and commit all the files
  *
  * @param {string} commitMessage
  * @return {Promise<void>}
@@ -17,11 +17,11 @@ export async function commitEverythingInDirectory(commitMessage) {
 }
 
 /**
- * Init a Git repository with initial branch named with input string
+ * Init a Git repository
  *
  * @param {string} branch
  * @return {Promise<void>}
  */
-export async function initRepo(branch) {
-  await $`git init --initial-branch ${branch}`;
+export async function initRepo() {
+  await $`git init`;
 }
