@@ -16,9 +16,8 @@ export const check: Task = {
       command,
       { cwd: codeDir },
       {
-        startMessage: '🥾 Checking types validity',
-        errorMessage: '❌ Unsound types detected',
-        dryRun,
+        startMessage: 'Checking types validity',
+        errorMessage: 'Unsound types detected',
         debug,
       }
     );
