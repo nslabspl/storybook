@@ -63,7 +63,7 @@ interface ElementsProps {
 export const Elements: FC<ElementsProps> = ({ elements, type }) => (
   <ol>
     {elements.map((element, index) => (
-      // eslint-disable-dev-line react/no-array-index-key
+      // eslint-disable-next-line react/no-array-index-key
       <Element element={element} key={index} type={type} />
     ))}
   </ol>

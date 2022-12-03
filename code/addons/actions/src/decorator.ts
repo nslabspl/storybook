@@ -1,16 +1,12 @@
 import { makeDecorator, useEffect } from '@storybook/preview-api';
 import global from 'global';
 import { actions } from './runtime/actions';
-
 import { PARAM_KEY } from './constants';
 
 const { document, Element } = global;
-
 const delegateEventSplitter = /^(\S+)\s*(.*)$/;
-
 const isIE = Element != null && !Element.prototype.matches;
 const matchesMethod = isIE ? 'msMatchesSelector' : 'matches';
-
 const hasMatchInAncestry = (element: any, selector: any): boolean => {
   if (element[matchesMethod](selector)) {
     return true;
@@ -25,7 +21,7 @@ const hasMatchInAncestry = (element: any, selector: any): boolean => {
 const createHandlers = (actionsFn: (...arg: any[]) => object, ...handles: any[]) => {
   const actionsObject = actionsFn(...handles);
   return Object.entries(actionsObject).map(([key, action]) => {
-    // eslint-disable-dev-line @typescript-eslint/naming-convention
+    // eslint-disable-next-line @typescript-eslint/naming-convention
     const [_, eventName, selector] = key.match(delegateEventSplitter) || [];
     return {
       eventName,
