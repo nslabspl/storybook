@@ -1,11 +1,9 @@
 import { pathExists, remove } from 'fs-extra';
 import { join, resolve } from 'path';
-
 import type { Task } from '../task';
 
 const logger = console;
 const reprosDir = resolve(__dirname, '../../repros');
-
 export const generate: Task = {
   description: 'Create the template repro',
   dependsOn: ['run-registry'],

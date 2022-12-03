@@ -7,10 +7,8 @@ export const smokeTest: Task = {
   async ready() {
     return false;
   },
-  async run({ sandboxDir }, { dryRun, debug }) {
-    // eslint-disable-next-line no-console
+  async run({ sandboxDir }, { debug }) {
     console.log(`smoke testing in ${sandboxDir}`);
-
-    return exec(`yarn storybook --smoke-test`, { cwd: sandboxDir }, { dryRun, debug });
+    return exec(`yarn storybook --smoke-test`, { cwd: sandboxDir }, { debug });
   },
 };

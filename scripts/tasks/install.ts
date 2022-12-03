@@ -8,10 +8,8 @@ export const install: Task = {
   async ready({ codeDir }) {
     return pathExists(join(codeDir, 'node_modules'));
   },
-  async run({ codeDir }, { dryRun, debug }) {
-    await exec(`yarn install`, { cwd: codeDir }, { dryRun, debug });
-
-    // these are webpack4 types, we we should never use
-    await remove(join(codeDir, 'node_modules', '@types', 'webpack'));
+  async run({ codeDir }, { debug }) {
+    await exec(`yarn install`, { cwd: codeDir }, { debug }); // Webpack5
+    await remove(join(codeDir, 'node_modules', '@types', 'webpack')); // Webpack4
   },
 };

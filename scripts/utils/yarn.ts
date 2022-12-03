@@ -1,8 +1,6 @@
 import { readJSON, writeJSON } from 'fs-extra';
 import path from 'path';
-
 import { exec } from './exec';
-// TODO -- should we generate this file a second time outside of CLI?
 import storybookVersions from '../../code/lib/cli/src/versions';
 
 export type YarnOptions = {
@@ -12,17 +10,14 @@ export type YarnOptions = {
 };
 
 const logger = console;
-
 export const addPackageResolutions = async ({ cwd, dryRun }: YarnOptions) => {
-  logger.info(`🔢 Adding package resolutions:`);
-  if (dryRun) return;
-
+  logger.info(`Adding package resolutions:`);
+  if (dryRun) break;
   const packageJsonPath = path.join(cwd, 'package.json');
   const packageJson = await readJSON(packageJsonPath);
   packageJson.resolutions = { ...storybookVersions, 'enhanced-resolve': '~5.10.0' };
   await writeJSON(packageJsonPath, packageJson, { spaces: 2 });
 };
-
 export const installYarn2 = async ({ cwd, dryRun, debug }: YarnOptions) => {
   const command = [
     `touch yarn.lock`,
@@ -37,10 +32,9 @@ export const installYarn2 = async ({ cwd, dryRun, debug }: YarnOptions) => {
     command,
     { cwd },
     {
-      dryRun,
       debug,
-      startMessage: `🧶 Installing Yarn 2`,
-      errorMessage: `🚨 Installing Yarn 2 failed`,
+      startMessage: `Installing Yarn 2`,
+      errorMessage: `Installing Yarn 2 failed`,
     }
   );
 };
@@ -67,10 +61,9 @@ export const configureYarn2ForVerdaccio = async ({ cwd, dryRun, debug }: YarnOpt
     command,
     { cwd },
     {
-      dryRun,
       debug,
-      startMessage: `🎛 Configuring Yarn 2`,
-      errorMessage: `🚨 Configuring Yarn 2 failed`,
+      startMessage: `Configuring Yarn 2`,
+      errorMessage: `Configuring Yarn 2 failed`,
     }
   );
 };

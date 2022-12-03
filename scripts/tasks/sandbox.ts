@@ -1,9 +1,7 @@
 import { pathExists, remove } from 'fs-extra';
-
 import type { Task } from '../task';
 
 const logger = console;
-
 export const sandbox: Task = {
   description: 'Create the sandbox from a template',
   dependsOn: ({ template }, { link }) => {
