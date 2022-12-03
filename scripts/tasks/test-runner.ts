@@ -9,7 +9,7 @@ export const testRunner: Task = {
   async ready() {
     return false;
   },
-  async run({ sandboxDir, junitFilename }, { dryRun, debug }) {
+  async run({ sandboxDir, junitFilename }, { debug }) {
     const execOptions = { cwd: sandboxDir };
 
     await exec(
@@ -20,7 +20,7 @@ export const testRunner: Task = {
           JEST_JUNIT_OUTPUT_FILE: junitFilename,
         },
       },
-      { dryRun, debug }
+      { debug }
     );
   },
 };
