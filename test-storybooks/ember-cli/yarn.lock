@@ -2523,7 +2523,7 @@ __metadata:
     estree-to-babel: ^4.9.0
     hast-util-to-estree: ^2.0.2
     js-string-escape: ^1.0.1
-    loader-utils: ^2.0.0
+    loader-utils: 2.0.4
     lodash: ^4.17.21
   checksum: 2651dc9f01c40f1346f5890ae4e535574a80fed10277ae44537abf6f3f4eb4c204ae367329585f1345dda55d22430df6fe799c33f6b4c94f542ec74d33285924
   languageName: node
@@ -3984,7 +3984,7 @@ __metadata:
   resolution: "babel-loader@npm:8.2.5"
   dependencies:
     find-cache-dir: ^3.3.1
-    loader-utils: ^2.0.0
+    loader-utils: 2.0.4
     make-dir: ^3.1.0
     schema-utils: ^2.6.5
   peerDependencies:
@@ -10762,9 +10762,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"loader-utils@npm:^2.0.0":
-  version: 2.0.3
-  resolution: "loader-utils@npm:2.0.3"
+"loader-utils@npm:2.0.4":
+  version: 2.0.4
+  resolution: "loader-utils@npm:2.0.4"
   dependencies:
     big.js: ^5.2.2
     emojis-list: ^3.0.0
