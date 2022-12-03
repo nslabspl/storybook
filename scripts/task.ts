@@ -5,7 +5,6 @@ import { join, resolve } from 'path';
 import { prompt } from 'prompts';
 import boxen from 'boxen';
 import { dedent } from 'ts-dedent';
-
 import type { OptionValues } from './utils/options';
 import { createOptions, getCommand, getOptionsOrPrompt } from './utils/options';
 import { install } from './tasks/install';
@@ -22,7 +21,6 @@ import { serve } from './tasks/serve';
 import { testRunner } from './tasks/test-runner';
 import { chromatic } from './tasks/chromatic';
 import { e2eTests } from './tasks/e2e-tests';
-
 import { allTemplates as TEMPLATES } from '../code/lib/cli/src/repro-templates';
 
 const sandboxDir = process.env.SANDBOX_ROOT || resolve(__dirname, '../sandbox');
@@ -30,7 +28,6 @@ const codeDir = resolve(__dirname, '../code');
 const junitDir = resolve(__dirname, '../test-results');
 
 export const extraAddons = ['a11y', 'storysource'];
-
 export type TemplateKey = keyof typeof TEMPLATES;
 export type Template = typeof TEMPLATES[TemplateKey];
 export type Path = string;
@@ -307,9 +304,7 @@ async function runTask(task: Task, details: TemplateDetails, optionValues: Passe
 
 async function run() {
   const allOptionValues = await getOptionsOrPrompt('yarn task', options);
-
   const { task: taskKey, startFrom, junit, ...optionValues } = allOptionValues;
-
   const finalTask = tasks[taskKey];
   const { template: templateKey } = optionValues;
   const template = TEMPLATES[templateKey];
