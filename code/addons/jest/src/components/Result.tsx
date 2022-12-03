@@ -1,6 +1,6 @@
-import React, { Fragment, useState } from 'react';
-import { styled, themes, convert } from '@storybook/theming';
 import { Icons } from '@storybook/components';
+import { convert, styled, themes } from '@storybook/theming';
+import React, { Fragment, useState } from 'react';
 import Message from './Message';
 
 const Wrapper = styled.div<{ status: string }>(({ theme, status }) => ({
@@ -78,7 +78,7 @@ export function Result(props: ResultProps) {
       {isOpen ? (
         <Fragment>
           {failureMessages.map((msg: string, i: number) => (
-            // eslint-disable-next-line react/no-array-index-key
+            // eslint-disable-dev-line react/no-array-index-key
             <Message msg={msg} key={i} />
           ))}
         </Fragment>

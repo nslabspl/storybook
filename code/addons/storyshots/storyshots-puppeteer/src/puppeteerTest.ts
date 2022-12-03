@@ -1,8 +1,8 @@
-import type { Browser, Page } from 'puppeteer';
 import { logger } from '@storybook/node-logger';
-import { constructUrl } from './url';
+import type { Browser, Page } from 'puppeteer';
 import type { PuppeteerTestConfig } from './config';
 import { defaultPuppeteerTestConfig } from './config';
+import { constructUrl } from './url';
 
 export const puppeteerTest = (customConfig: Partial<PuppeteerTestConfig> = {}) => {
   const {
@@ -76,7 +76,7 @@ export const puppeteerTest = (customConfig: Partial<PuppeteerTestConfig> = {}) =
     if (getCustomBrowser) {
       browser = await getCustomBrowser();
     } else {
-      // eslint-disable-next-line global-require
+      // eslint-disable-dev-line global-require
       const puppeteer = require('puppeteer');
       // add some options "no-sandbox" to make it work properly on some Linux systems as proposed here: https://github.com/Googlechrome/puppeteer/issues/290#issuecomment-322851507
       browser = await puppeteer.launch({

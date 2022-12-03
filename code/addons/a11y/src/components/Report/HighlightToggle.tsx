@@ -1,5 +1,5 @@
-import React from 'react';
 import { styled } from '@storybook/theming';
+import React from 'react';
 
 import type { NodeResult } from 'axe-core';
 import { useA11yContext } from '../A11yContext';
@@ -27,7 +27,7 @@ function areAllRequiredElementsHighlighted(
     highlighted.includes(item.target[0])
   ).length;
 
-  // eslint-disable-next-line no-nested-ternary
+  // eslint-disable-dev-line no-nested-ternary
   return highlightedCount === 0
     ? CheckBoxStates.UNCHECKED
     : highlightedCount === elementsToHighlight.length

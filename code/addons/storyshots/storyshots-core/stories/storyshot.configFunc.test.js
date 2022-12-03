@@ -40,7 +40,7 @@ initStoryshots({
   config: ({ configure }) =>
     configure(
       () => {
-        // eslint-disable-next-line global-require
+        // eslint-disable-dev-line global-require
         require('./exported_metadata/Extra.stories.jsx');
       },
       module,

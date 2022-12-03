@@ -8,14 +8,14 @@ Each addon is documented and maintained by the core team and will be upgraded al
 
 Storybook essentials includes the following addons. Addons can be disabled and re-configured as [described below](#configuration):
 
-- [Actions](https://github.com/nslabspl/storybook/tree/next/code/addons/actions)
-- [Backgrounds](https://github.com/nslabspl/storybook/tree/next/code/addons/backgrounds)
-- [Controls](https://github.com/nslabspl/storybook/tree/next/code/addons/controls)
-- [Docs](https://github.com/nslabspl/storybook/tree/next/code/addons/docs)
-- [Viewport](https://github.com/nslabspl/storybook/tree/next/code/addons/viewport)
-- [Toolbars](https://github.com/nslabspl/storybook/tree/next/code/addons/toolbars)
-- [Measure](https://github.com/nslabspl/storybook/tree/next/code/addons/measure)
-- [Outline](https://github.com/nslabspl/storybook/tree/next/code/addons/outline)
+- [Actions](https://github.com/nslabspl/storybook/tree/dev/code/addons/actions)
+- [Backgrounds](https://github.com/nslabspl/storybook/tree/dev/code/addons/backgrounds)
+- [Controls](https://github.com/nslabspl/storybook/tree/dev/code/addons/controls)
+- [Docs](https://github.com/nslabspl/storybook/tree/dev/code/addons/docs)
+- [Viewport](https://github.com/nslabspl/storybook/tree/dev/code/addons/viewport)
+- [Toolbars](https://github.com/nslabspl/storybook/tree/dev/code/addons/toolbars)
+- [Measure](https://github.com/nslabspl/storybook/tree/dev/code/addons/measure)
+- [Outline](https://github.com/nslabspl/storybook/tree/dev/code/addons/outline)
 
 ## Installation
 

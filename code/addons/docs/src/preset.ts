@@ -107,7 +107,7 @@ async function webpack(
     ...webpackConfig,
     plugins: [
       ...(webpackConfig.plugins || []),
-      // eslint-disable-next-line global-require
+      // eslint-disable-dev-line global-require
       ...(csfPluginOptions ? [require('@storybook/csf-plugin').webpack(csfPluginOptions)] : []),
     ],
 

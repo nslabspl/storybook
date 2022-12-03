@@ -19,8 +19,8 @@ export const globalTypes = {
     toolbar: {
       icon: 'globe',
       shortcuts: {
-        next: {
-          label: 'Go to next language',
+        dev: {
+          label: 'Go to dev language',
           keys: ['L'],
         },
         previous: {

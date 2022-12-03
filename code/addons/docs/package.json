@@ -91,7 +91,7 @@
     "@storybook/components": "7.0.0-alpha.54",
     "@storybook/csf-plugin": "7.0.0-alpha.54",
     "@storybook/csf-tools": "7.0.0-alpha.54",
-    "@storybook/mdx2-csf": "next",
+    "@storybook/mdx2-csf": "dev",
     "@storybook/node-logger": "7.0.0-alpha.54",
     "@storybook/postinstall": "7.0.0-alpha.54",
     "@storybook/preview-api": "7.0.0-alpha.54",

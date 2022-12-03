@@ -5,8 +5,8 @@ import type { NodeResult, Result } from 'axe-core';
 import { SizeMe } from 'react-sizeme';
 import HighlightToggle from './Report/HighlightToggle';
 
-import type { RuleType } from './A11YPanel';
 import { useA11yContext } from './A11yContext';
+import type { RuleType } from './A11YPanel';
 
 // TODO: reuse the Tabs component from @storybook/theming instead of re-building identical functionality
 
@@ -118,7 +118,7 @@ export const Tabs: React.FC<TabsProps> = ({ tabs }) => {
             <TabsWrapper>
               {tabs.map((tab, index) => (
                 <Item
-                  /* eslint-disable-next-line react/no-array-index-key */
+                  /* eslint-disable-dev-line react/no-array-index-key */
                   key={index}
                   data-index={index}
                   active={activeTab === index}

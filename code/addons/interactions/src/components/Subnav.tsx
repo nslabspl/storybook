@@ -1,18 +1,14 @@
-import type { ComponentProps } from 'react';
-import React from 'react';
 import {
-  Button,
-  IconButton,
-  Icons,
-  Separator,
-  P,
-  TooltipNote,
-  WithTooltip,
-  Bar,
+    Bar, Button,
+    IconButton,
+    Icons, P, Separator, TooltipNote,
+    WithTooltip
 } from '@storybook/components';
 import type { Call, ControlStates } from '@storybook/instrumenter';
 import { CallStates } from '@storybook/instrumenter';
 import { styled } from '@storybook/theming';
+import type { ComponentProps } from 'react';
+import React from 'react';
 
 import { StatusBadge } from './StatusBadge';
 
@@ -158,8 +154,8 @@ export const Subnav: React.FC<SubnavProps> = ({
               <StyledIconButton
                 aria-label="Go forward"
                 containsIcon
-                onClick={controls.next}
-                disabled={!controlStates.next}
+                onClick={controls.dev}
+                disabled={!controlStates.dev}
               >
                 <Icons icon="playnext" />
               </StyledIconButton>
