@@ -27,6 +27,7 @@ const config: StorybookConfig = {
   ],
   core: {
     channelOptions: { allowFunction: false, maxDepth: 10 },
+    // Make it default setting
     disableTelemetry: true,
   },
   logLevel: 'debug',

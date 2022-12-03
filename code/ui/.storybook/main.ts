@@ -55,6 +55,7 @@ const config: StorybookConfig = {
     options: {},
   },
   core: {
+    // Make it default setting
     disableTelemetry: true,
   },
   features: {

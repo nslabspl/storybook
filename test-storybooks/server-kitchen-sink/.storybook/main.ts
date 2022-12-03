@@ -11,9 +11,10 @@ const mainConfig: StorybookConfig = {
     '@storybook/addon-links',
     '@storybook/addon-controls',
     '@storybook/addon-highlight',
-	'@storybook/angular'
+    '@storybook/angular'
   ],
   core: {
+    // Make it default setting
     disableTelemetry: true,
   },
   features: {
