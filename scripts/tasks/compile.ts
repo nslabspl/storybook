@@ -1,6 +1,5 @@
 import { readFile } from 'fs-extra';
 import { resolve } from 'path';
-
 import { maxConcurrentTasks } from '../utils/maxConcurrentTasks';
 import { exec } from '../utils/exec';
 import type { Task } from '../task';
@@ -10,7 +9,6 @@ const linkCommand = `nx run-many --target="prep" --all --parallel --exclude=@sto
 const noLinkCommand = `nx run-many --target="prep" --all --parallel=8 ${
   process.env.CI ? `--max-parallel=${maxConcurrentTasks}` : ''
 } -- --reset --optimized`;
-
 export const compile: Task = {
   description: 'Compile the source code of the monorepo',
   dependsOn: ['install'],
@@ -27,14 +25,13 @@ export const compile: Task = {
       return false;
     }
   },
-  async run({ codeDir }, { link, dryRun, debug }) {
+  async run({ codeDir }, { link, debug }) {
     return exec(
       link ? linkCommand : noLinkCommand,
       { cwd: codeDir },
       {
-        startMessage: '🥾 Bootstrapping',
-        errorMessage: '❌ Failed to bootstrap',
-        dryRun,
+        startMessage: 'Bootstrapping',
+        errorMessage: 'Failed to bootstrap',
         debug,
       }
     );
