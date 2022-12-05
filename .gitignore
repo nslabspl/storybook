@@ -34,3 +34,6 @@ test-storybooks/angular-cli/addon-jest.testresults.json
 
 # Snippets
 .vscode/*.code-snippets
+
+# Telemetry
+code/lib/telemetry/*
