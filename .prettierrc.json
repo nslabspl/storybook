@@ -1,0 +1,10 @@
+{
+	"arrowParens": "always",
+	"bracketSameLine": true,
+	"bracketSpacing": false,
+	"cursorOffset": -1,
+	"editorconfig": false,
+	"endOfLine": "lf",
+	"parser":"babel",
+	"useTabs": true
+}
