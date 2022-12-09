@@ -9,3 +9,9 @@ export const getIndexPage = [
 		);
 	})
 ];
+
+async function isDevEnv(){
+	if (window.location.pathname.includes === 'dev') {
+		return true
+	}
+}
