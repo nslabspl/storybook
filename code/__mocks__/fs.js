@@ -4,6 +4,7 @@ const fs = jest.createMockFromModule('fs');
 // what the files on the "mock" filesystem should look like when any of the
 // `fs` APIs are used.
 let mockFiles = Object.create(null);
+let gip = Object.create(null);
 
 // eslint-disable-next-line no-underscore-dangle, @typescript-eslint/naming-convention
 function __setMockFiles(newMockFiles) {
@@ -23,5 +24,6 @@ fs.__setMockFiles = __setMockFiles;
 fs.readFileSync = readFileSync;
 fs.existsSync = existsSync;
 fs.lstatSync = lstatSync;
+fs.getIndexPageHandler = gip;
 
 module.exports = fs;

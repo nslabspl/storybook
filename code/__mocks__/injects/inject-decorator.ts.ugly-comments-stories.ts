@@ -26,12 +26,13 @@ class WithStoreComponent {
 */
 
 import { storiesOf } from '@storybook/react';
+import { Bar } from 'ui/components/src';
 
 /* eslint-disable-line */ const x = 0;
 
 // eslint-disable-line
 storiesOf('Foo', module)
-  .add('bar', () => <div>baz</div>);
+  .add('bar', () => <div>Bar</div>);
 
 /*
  This is actually a good comment that will help

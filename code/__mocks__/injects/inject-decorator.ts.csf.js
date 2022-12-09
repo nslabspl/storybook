@@ -9,23 +9,15 @@ export default {
 };
 
 export const text = () => (
-  <Button onClick={action("clicked")}>Hello Button</Button>
+  <Button onClick={action("clicked")}/>
 );
 
 export const emoji = () => (
-  <Button onClick={action("clicked")}>
-    <span role="img" aria-label="so cool">
-      😀 😎 👍 💯
-    </span>
-  </Button>
+  <Button onClick={action("clicked")}/>
 );
 
 export function emojiFn() {
   return (
-    <Button onClick={action("clicked")}>
-      <span role="img" aria-label="so cool">
-        😀 😎 👍 💯
-      </span>
-    </Button>
+    <Button onClick={action("clicked")}/>
   )
 };
