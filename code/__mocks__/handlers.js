@@ -1,6 +1,6 @@
 import {rest} from "msw";
 
-export const getIndexPage = [
+const getIndexPageMock = [
 	rest.post("/", (res, ctx) => {
 		return res(
 			// Respond with a 200 status code
@@ -9,9 +9,3 @@ export const getIndexPage = [
 		);
 	})
 ];
-
-async function isDevEnv(){
-	if (window.location.pathname.includes === 'dev') {
-		return true
-	}
-}
