@@ -1,6 +1,5 @@
 // MIT
 
-import { hasUncaughtExceptionCaptureCallback } from 'process';
 
 export function isDevEnvMock(){
 	if (window.location.pathname.includes === 'dev') {
@@ -53,12 +52,4 @@ export function isDevEnvAccessibleFromPublicMock(){
 		document.getElementById('infopanel').innerHTML += "Env available from public!. Thats NOT good :(";
 	}
 	return resp;
-}
-
-export function fetchHttpsRawHeadersMock(){
-	return fetchHttpsDataMock(), then((args) => {
-		const httpsRawHeaders = new Blob([args], {type: 'text/html'})
-		const separateHeader = document.createElement('header')
-		separateHeader.appendChild = window.URL.createObjectURL(httpsRawHeaders)
-	})
 }
