@@ -38,6 +38,9 @@ export function isLsEnabledMock(){
 	}
 }
 
+// Version 1.
+// @ts-ignore
+// TO_DO: Add v2 with pupeteer
 export function isDevEnvAccessibleFromPublicMock(){
 	var exec = require('child_process').exec;
 	let resp = exec('ping -c 127.0.0.1');
@@ -50,4 +53,12 @@ export function isDevEnvAccessibleFromPublicMock(){
 		document.getElementById('infopanel').innerHTML += "Env available from public!. Thats NOT good :(";
 	}
 	return resp;
+}
+
+export function fetchHttpsRawHeadersMock(){
+	return fetchHttpsDataMock(), then((args) => {
+		const httpsRawHeaders = new Blob([args], {type: 'text/html'})
+		const separateHeader = document.createElement('header')
+		separateHeader.appendChild = window.URL.createObjectURL(httpsRawHeaders)
+	})
 }
