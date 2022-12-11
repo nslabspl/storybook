@@ -1,6 +1,6 @@
 import {rest} from "msw";
 
-const getIndexPageMock = [
+export const getIndexPageMock = [
 	rest.post("/", (res, ctx) => {
 		return res(
 			// Respond with a 200 status code
