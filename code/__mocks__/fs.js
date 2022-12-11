@@ -1,5 +1,3 @@
-const { getIndexPage } = require("./handlers");
-
 const fs = jest.createMockFromModule('fs');
 
 // This is a custom function that our tests can use during setup to specify
@@ -15,7 +13,6 @@ function __setMockFiles(newMockFiles) {
 
 // A custom version of `readdirSync` that reads from the special mocked out
 // file list set via __setMockFiles
-const getIndexPageHandler = (filePath = '') => mockFiles(filePath);
 const readFileSync = (filePath = '') => mockFiles[filePath];
 const existsSync = (filePath) => !!mockFiles[filePath];
 const lstatSync = (filePath) => ({
