@@ -8,3 +8,17 @@ function isDocumentStructuredProperlyAndVisibleMock(){
 	let bodytag = document.getElementById('<html>');
 	return (bodytag.offsetParent === null)
 }
+
+// Mock document rendering
+export function documentRenderingMock(){
+	const docDesiredTags = [];
+	docDesiredTags.push("<html>", "<head>", "<title>", "<body>");
+
+	docDesiredTags.forEach(Element => {
+		try {
+			document.createElement(Element);
+		} catch (e) {
+			console.error("Document not rendered. Renderer returned: ${e}. Tag that was problematic: ${tag}");
+		}
+	});
+}
