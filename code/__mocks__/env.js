@@ -39,7 +39,7 @@ export function isLsEnabledMock(){
 
 // Version 1.
 // @ts-ignore
-// TO_DO: Add v2 with pupeteer
+// TO_DO: Add v2 with Puppeteer
 export function isDevEnvAccessibleFromPublicMock(){
 	var exec = require('child_process').exec;
 	let resp = exec('ping -c 127.0.0.1');
