@@ -38,7 +38,6 @@ export function isLsEnabledMock(){
 }
 
 // Version 1.
-// @ts-ignore
 // TO_DO: Add v2 with Puppeteer
 export function isDevEnvAccessibleFromPublicMock(){
 	var exec = require('child_process').exec;
