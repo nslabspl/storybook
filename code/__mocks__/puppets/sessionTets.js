@@ -1,12 +1,12 @@
+import { Console } from "console";
 import puppeteer from "puppeteer";
 
 (async() => {
 	const browser = await puppeteer.launch();
 	const page = await browser.newPage();
+	const pageBodyClass = '.bodyClass';
 
 	await page.goto('localhost');
-	
-	const pageBodyClass = '.bodyClass';
 	await page.waitForSelector(pageBodyClass);
 	await page.setViewport({
 		height: 1920,
@@ -20,4 +20,6 @@ import puppeteer from "puppeteer";
 			return `${anchor.getAttribute('href')}`;
 		});
 	}, pageBodyClass);
+	console.log(page.browser.name);
+	return allLinks;
 })();
