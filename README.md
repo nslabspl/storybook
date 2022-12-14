@@ -14,6 +14,7 @@ Storybook is a frontend workshop for building UI components and pages in isolati
 <center>
   <img src="https://raw.githubusercontent.com/nslabspl/storybook/dev/media/storybook-intro.gif" width="100%" />
 </center>
+
 ## License
 
 [MIT](https://github.com/nslabspl/storybook/blob/main/LICENSE)
