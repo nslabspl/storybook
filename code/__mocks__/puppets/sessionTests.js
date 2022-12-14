@@ -1,4 +1,3 @@
-import { Console } from "console";
 import puppeteer from "puppeteer";
 
 (async() => {
