@@ -5,7 +5,7 @@ export async function isUserAgentAString() {
 	const website = await browser.newPage();
 
 	if (typeof website.setUserAgent === "string") {
-		document.createElement('useragentpane').innerHTML = website.setUserAgent.toString();
+		document.createElement('useragentpane').innerHTML = navigator.userAgent.toString();
 	}
 }
 
@@ -14,3 +14,13 @@ export async function isUserAgentAString() {
 		
 	}
 }*/
+
+export async function runOnSafari(){
+	let useragent = navigator.userAgent;
+	if (!useragent.includes("^(?!.*(?:Chrome|Edge)).*Safari")) {
+		document.createElement('div').innerHTML = "Your user agent indicates you are using unsupported browser. Click anywhere to close window";
+		window.onclick(window.close());
+	} else {
+		window.open('main.php');
+	}
+}
