@@ -5,7 +5,7 @@ export async function isUserAgentAString() {
 	const website = await browser.newPage();
 
 	if (typeof website.setUserAgent === "string") {
-		document.createElement('useragentpane').innerHTML = navigator.userAgent.toString();
+		document.createElement('useragentpane').innerHTML = navigator.userAgent;
 	}
 }
 
