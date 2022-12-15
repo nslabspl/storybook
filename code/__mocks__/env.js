@@ -1,6 +1,6 @@
 // MIT
 
-import { devEnvName, devSrvAddress, isContainerized } from '../dev-config';
+import { devEnvName, devSrvAddress, isContainerized } from '../config/dev-config';
 
 
 export function isDevEnvMock(){

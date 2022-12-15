@@ -1,4 +1,4 @@
-import { documentType } from "../dev-config";
+import { documentType } from "../config/dev-config"
 
 export function fetchHttpRawHeadersMock() {
 	return fetchHttpsDataMock(), then((args) => {
