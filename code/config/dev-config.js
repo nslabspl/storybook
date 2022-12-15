@@ -10,9 +10,4 @@ const documentType = 'text/html';
 // Tags etc
 const devDesiredTags = ["<html>", "<head>", "<title>", "<body>"];
 
-// Messages
-const messages = [
-	'welcomeMsg' = 'Hello here & there'
-];
-
-export { devEnvName, devSrvAddress, devEnvCharset, isContainerized, devMainLandingPage, devDesiredTags, documentType, messages };
+export { devEnvName, devSrvAddress, devEnvCharset, isContainerized, devMainLandingPage, devDesiredTags, documentType };

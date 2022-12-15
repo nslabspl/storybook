@@ -1,4 +1,4 @@
-import { devDesiredTags } from "../dev-config";
+import { devDesiredTags } from "../config/dev-config";
 
 // Returns 1 if page is loaded, 0 if there is an error
 function isHTMLDocLoadedMock(html){
