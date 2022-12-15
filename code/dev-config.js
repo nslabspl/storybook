@@ -3,9 +3,9 @@ const devMainLandingPage = "/main.php";
 const devEnvName = "StoryBook dev env";
 const devEnvCharset = "utf-8";
 const isContainerized = true;
+const documentType = 'text/html';
 
 // Tags etc
 const devDesiredTags = ["<html>", "<head>", "<title>", "<body>"];
 
-
-export { devEnvName, devSrvAddress, devEnvCharset, isContainerized, devMainLandingPage, devDesiredTags };
+export { devEnvName, devSrvAddress, devEnvCharset, isContainerized, devMainLandingPage, devDesiredTags, documentType };

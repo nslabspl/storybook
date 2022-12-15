@@ -1,6 +1,7 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
+		"experimentalDecorators": true,
     "baseUrl": ".",
     "incremental": false,
     "noImplicitAny": true,
