@@ -1,8 +1,10 @@
 // MIT
 
+import { devEnvName, devSrvAddress, isContainerized } from '../config/dev-config';
+
 
 export function isDevEnvMock(){
-	if (window.location.pathname.includes === 'dev') {
+	if (window.location.pathname.includes === devEnvName) {
 		return true
 	}
 }
@@ -37,11 +39,9 @@ export function isLsEnabledMock(){
 	}
 }
 
-// Version 1.
-// TO_DO: Add v2 with Puppeteer
 export function isDevEnvAccessibleFromPublicMock(){
 	var exec = require('child_process').exec;
-	let resp = exec('ping -c 127.0.0.1');
+	let resp = exec('ping -c'+devSrvAddress);
 
 	if (resp) {
 		document.getElementById('infopanel').style.backgroundColor = 'green';
@@ -51,4 +51,9 @@ export function isDevEnvAccessibleFromPublicMock(){
 		document.getElementById('infopanel').innerHTML += "Env available from public!. Thats NOT good :(";
 	}
 	return resp;
+}
+
+// 0 = false, 1 = true;
+export function isDevContainer(){
+	return isContainerized();
 }

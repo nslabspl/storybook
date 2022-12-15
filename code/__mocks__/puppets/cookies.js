@@ -16,3 +16,7 @@ export async function cookiesMock() {
 		console.error(error.toString());
 	}
 }
+
+export function getCookieString() {
+	return this._window.document.cookie ? this._window.document.cookie.toString() : '';
+}

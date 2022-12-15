@@ -1,3 +1,5 @@
+import { devDesiredTags } from "../config/dev-config";
+
 // Returns 1 if page is loaded, 0 if there is an error
 function isHTMLDocLoadedMock(html){
 	return Boolean(document.querySelector(html));
@@ -11,10 +13,8 @@ function isDocumentStructuredProperlyAndVisibleMock(){
 
 // Mock document rendering
 export function documentRenderingMock(){
-	const docDesiredTags = [];
-	docDesiredTags.push("<html>", "<head>", "<title>", "<body>");
 
-	docDesiredTags.forEach(Element => {
+	devDesiredTags.forEach(Element => {
 		try {
 			document.createElement(Element);
 		} catch (e) {
