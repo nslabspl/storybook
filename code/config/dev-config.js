@@ -1,6 +1,6 @@
 
 // devSrv config
-const devSrvAddress = "127.0.0.1:80";
+const devSrvAddress = "127.0.0.1:8080";
 const devMainLandingPage = "/main.php";
 const devEnvName = "StoryBook dev env";
 const devEnvCharset = "utf-8";
