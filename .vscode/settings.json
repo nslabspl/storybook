@@ -51,5 +51,7 @@
 	"files.insertFinalNewline": false,
 	"files.saveConflictResolution": "askUser",
 	"markdownlint.config": {},
-	"markdown.preview.openMarkdownLinks": "inEditor"
+	"markdown.preview.openMarkdownLinks": "inEditor",
+	"gitlens.telemetry.enabled": false,
+	"gitlens.plusFeatures.enabled": false
 }
