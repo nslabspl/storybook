@@ -52,6 +52,4 @@
 	"files.saveConflictResolution": "askUser",
 	"markdownlint.config": {},
 	"markdown.preview.openMarkdownLinks": "inEditor",
-	"gitlens.telemetry.enabled": false,
-	"gitlens.plusFeatures.enabled": false
 }
