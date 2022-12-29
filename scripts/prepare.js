@@ -68,7 +68,7 @@ const hasFlag = (flags, name) => !!flags.find((s) => s.startsWith(`--${name}`));
 
 const modules = true;
 
-async function prepare({ cwd, flags }) {
+export async function prepareStorybookScript({ cwd, flags }) {
   const { packageJson } = await readPkgUp(cwd);
   const message = chalk.gray(`Built: ${chalk.bold(`${packageJson.name}@${packageJson.version}`)}`);
   console.time(message);

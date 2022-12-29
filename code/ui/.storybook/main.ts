@@ -42,7 +42,7 @@ const blocksOnlyStories = [
   '../blocks/src/@(blocks|controls)/*.@(mdx|stories.@(tsx|ts|jsx|js))',
 ];
 
-const config: StorybookConfig = {
+const stbConfig: StorybookConfig = {
   stories: isBlocksOnly ? blocksOnlyStories : allStories,
   addons: [
     '@storybook/addon-links',
@@ -77,4 +77,4 @@ const config: StorybookConfig = {
   }),
 };
 
-export default config;
+export default stbConfig;
