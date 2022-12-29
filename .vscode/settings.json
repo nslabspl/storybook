@@ -50,5 +50,6 @@
 	"files.autoSaveDelay": 500,
 	"files.insertFinalNewline": false,
 	"files.saveConflictResolution": "askUser",
-	"markdownlint.config": {}
+	"markdownlint.config": {},
+	"markdown.preview.openMarkdownLinks": "inEditor",
 }
