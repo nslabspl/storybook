@@ -3,7 +3,6 @@
 /* eslint-disable global-require */
 const { resolve } = require('path');
 const { readJSON } = require('fs-extra');
-
 const getStorybookPackages = async () => {
   const workspaceJSON = await readJSON(resolve(__dirname, '..', 'code', 'workspace.json'));
   return Object.entries(workspaceJSON.projects).map(([k, v]) => ({
@@ -16,7 +15,6 @@ async function run() {
   const prompts = require('prompts');
   const program = require('commander');
   const chalk = require('chalk');
-
   const packages = await getStorybookPackages();
   const packageTasks = packages
     .map((package) => {
@@ -104,7 +102,7 @@ async function run() {
       return todo?.map((key) => tasks[key]);
     });
   } else {
-    // hits here when running yarn build --packagename
+    // go here when running yarn build --packagename
     watchMode = process.argv.includes('--watch');
     prodMode = process.argv.includes('--prod');
     selection = Object.keys(tasks)

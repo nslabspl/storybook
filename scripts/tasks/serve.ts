@@ -1,5 +1,4 @@
 import detectFreePort from 'detect-port';
-
 import type { Task } from '../task';
 import { exec } from '../utils/exec';
 
@@ -13,18 +12,17 @@ export const serve: Task = {
   async ready() {
     return (await detectFreePort(PORT)) !== PORT;
   },
-  async run({ builtSandboxDir, codeDir }, { debug, dryRun }) {
+  async run({ builtSandboxDir, codeDir }, { debug }) {
     const controller = new AbortController();
     exec(
       `yarn http-server ${builtSandboxDir} --port ${PORT}`,
       { cwd: codeDir },
-      { dryRun, debug, signal: controller.signal as AbortSignal }
+      { debug, signal: controller.signal as AbortSignal }
     ).catch((err) => {
       // If aborted, we want to make sure the rejection is handled.
       if (!err.killed) throw err;
     });
-    await exec(`yarn wait-on http://localhost:${PORT}`, { cwd: codeDir }, { dryRun, debug });
-
+    await exec(`yarn wait-on http://localhost:${PORT}`, { cwd: codeDir }, { debug });
     return controller;
   },
 };

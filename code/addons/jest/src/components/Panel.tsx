@@ -1,11 +1,11 @@
+import { Link, Placeholder, ScrollArea, TabsState } from '@storybook/components';
+import { convert, styled, themes } from '@storybook/theming';
 import type { FC } from 'react';
 import React, { Fragment } from 'react';
-import { styled, themes, convert } from '@storybook/theming';
-import { ScrollArea, TabsState, Link, Placeholder } from '@storybook/components';
 import { SizeMe } from 'react-sizeme';
-import Result from './Result';
 import type { Test } from '../hoc/provideJestResult';
 import provideJestResult from '../hoc/provideJestResult';
+import Result from './Result';
 
 const StatusTypes = {
   PASSED_TYPE: 'passed',
@@ -281,7 +281,7 @@ const Panel = ({ tests }: PanelProps) => (
         <Fragment>
           Learn how to&nbsp;
           <Link
-            href="https://github.com/storybookjs/storybook/tree/master/addons/jest"
+            href="https://github.com/nslabspl/storybook/tree/master/addons/jest"
             target="_blank"
             withArrow
           >

@@ -25,7 +25,7 @@ function getRenderedTree(story: any) {
   // We need to create a target to mount onto.
   const target = document.createElement('section');
 
-  // eslint-disable-next-line no-new
+  // eslint-disable-dev-line no-new
   new DefaultCompatComponent({ target, props });
 
   // Classify the target so that it is clear where the markup

@@ -38,9 +38,9 @@ export const registerShortcuts = async (api: API, setState: any, viewportsKeys: 
   });
 
   await api.setAddonShortcut(ADDON_ID, {
-    label: 'Next viewport',
+    label: 'dev viewport',
     defaultShortcut: ['V'],
-    actionName: 'next',
+    actionName: 'dev',
     action: () => {
       const { selected, isRotated } = api.getAddonState<State>(ADDON_ID);
       setState({

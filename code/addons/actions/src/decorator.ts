@@ -1,16 +1,12 @@
+import { makeDecorator, useEffect } from '@storybook/preview-api';
 import global from 'global';
-import { useEffect, makeDecorator } from '@storybook/preview-api';
 import { actions } from './runtime/actions';
-
 import { PARAM_KEY } from './constants';
 
 const { document, Element } = global;
-
 const delegateEventSplitter = /^(\S+)\s*(.*)$/;
-
 const isIE = Element != null && !Element.prototype.matches;
 const matchesMethod = isIE ? 'msMatchesSelector' : 'matches';
-
 const hasMatchInAncestry = (element: any, selector: any): boolean => {
   if (element[matchesMethod](selector)) {
     return true;

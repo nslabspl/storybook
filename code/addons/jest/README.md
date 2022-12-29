@@ -4,7 +4,7 @@ Storybook addon for inspecting Jest unit test results.
 
 [Framework Support](https://storybook.js.org/docs/react/api/frameworks-feature-support)
 
-[![Storybook Jest Addon Demo](https://raw.githubusercontent.com/storybookjs/storybook/next/code/addons/jest/docs/storybook-addon-jest.gif)](http://storybooks-official.netlify.com/?selectedKind=Addons%7Cjest&selectedStory=withTests&full=0&addons=1&stories=1&panelRight=0&addonPanel=storybook%2Ftests%2Fpanel)
+[![Storybook Jest Addon Demo](https://raw.githubusercontent.com/nslabspl/storybook/dev/code/addons/jest/docs/storybook-addon-jest.gif)](http://storybooks-official.netlify.com/?selectedKind=Addons%7Cjest&selectedStory=withTests&full=0&addons=1&stories=1&panelRight=0&addonPanel=storybook%2Ftests%2Fpanel)
 
 > Check out the above [Live Storybook](http://storybooks-official.netlify.com/?selectedKind=Addons%7Cjest&selectedStory=withTests&full=0&addons=1&stories=1&panelRight=0&addonPanel=storybook%2Ftests%2Fpanel).
 

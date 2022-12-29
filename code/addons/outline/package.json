@@ -12,13 +12,13 @@
     "storybook-addon",
     "style"
   ],
-  "homepage": "https://github.com/storybookjs/storybook/tree/main/addons/outline",
+  "homepage": "https://github.com/nslabspl/storybook/tree/main/addons/outline",
   "bugs": {
-    "url": "https://github.com/storybookjs/storybook/issues"
+    "url": "https://github.com/nslabspl/storybook/issues"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/storybookjs/storybook.git",
+    "url": "https://github.com/nslabspl/storybook.git",
     "directory": "addons/outline"
   },
   "funding": {

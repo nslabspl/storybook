@@ -1,11 +1,11 @@
 import fs from 'fs-extra';
-import remarkSlug from 'remark-slug';
 import remarkExternalLinks from 'remark-external-links';
+import remarkSlug from 'remark-slug';
 import { dedent } from 'ts-dedent';
 
-import type { IndexerOptions, StoryIndexer, DocsOptions, Options } from '@storybook/types';
 import type { CsfPluginOptions } from '@storybook/csf-plugin';
 import { loadCsf } from '@storybook/csf-tools';
+import type { DocsOptions, IndexerOptions, Options, StoryIndexer } from '@storybook/types';
 
 // for frameworks that are not working with react, we need to configure
 // the jsx to transpile mdx, for now there will be a flag for that
@@ -77,7 +77,7 @@ async function webpack(
 
       To update your configuration, please see migration instructions here:
 
-      https://github.com/storybookjs/storybook/blob/next/MIGRATION.md#dropped-source-loader--storiesof-static-snippets
+      https://github.com/nslabspl/storybook/blob/next/MIGRATION.md#dropped-source-loader--storiesof-static-snippets
     `);
   }
 
@@ -107,7 +107,7 @@ async function webpack(
     ...webpackConfig,
     plugins: [
       ...(webpackConfig.plugins || []),
-      // eslint-disable-next-line global-require
+      // eslint-disable-dev-line global-require
       ...(csfPluginOptions ? [require('@storybook/csf-plugin').webpack(csfPluginOptions)] : []),
     ],
 

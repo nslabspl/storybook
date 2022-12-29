@@ -1,6 +1,6 @@
 <h1>Storybook Docs for Ember</h1>
 
-> migration guide: This page documents the method to configure storybook introduced recently in 5.3.0, consult the [migration guide](https://github.com/storybookjs/storybook/blob/next/MIGRATION.md) if you want to migrate to this format of configuring storybook.
+> migration guide: This page documents the method to configure storybook introduced recently in 5.3.0, consult the [migration guide](https://github.com/nslabspl/storybook/blob/next/MIGRATION.md) if you want to migrate to this format of configuring storybook.
 
 Storybook Docs transforms your Storybook stories into world-class component documentation. Storybook Docs for Ember supports [DocsPage](../docs/docspage.md) for auto-generated docs, and [MDX](../docs/mdx.md) for rich long-form docs.
 
@@ -18,7 +18,7 @@ To learn more about Storybook Docs, read the [general documentation](../README.m
 First add the package. Make sure that the versions for your `@storybook/*` packages match:
 
 ```sh
-yarn add -D @storybook/addon-docs@next
+yarn add -D @storybook/addon-docs@dev
 ```
 
 Then add the following to your `.storybook/main.js` addons:
@@ -47,7 +47,7 @@ let app = new EmberApp(defaults, {
 
 Now, running the ember-cli server will generate a JSON documentation file at `/storybook-docgen/index.json`. Since generation of this file is tied into the ember-cli build, it will get regenerated everytime component files are saved. For details on documenting your components, check out the examples in the addon that powers the generation [ember-cli-addon-docs-yuidoc](https://github.com/ember-learn/ember-cli-addon-docs-yuidoc#documenting-components).
 
-Next, add the following to your `.storybook/preview.js` to load the generated json file:
+dev, add the following to your `.storybook/preview.js` to load the generated json file:
 
 ```js
 import { setJSONDoc } from '@storybook/addon-docs/ember';
@@ -114,7 +114,7 @@ context: { title: "Title" },
 <ArgsTable of='AppComponent' />
 ```
 
-Yes, it's redundant to declare `component` twice. [Coming soon](https://github.com/storybookjs/storybook/issues/8673).
+Yes, it's redundant to declare `component` twice. [Coming soon](https://github.com/nslabspl/storybook/issues/8673).
 
 Also, to use the `Props` doc block, you need to set up documentation generation, [as described above](#docspage).
 

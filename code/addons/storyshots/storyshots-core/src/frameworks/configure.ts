@@ -1,20 +1,16 @@
-import fs from 'fs';
-import path from 'path';
-import type {
-  Renderer,
-  ArgsEnhancer,
-  ArgTypesEnhancer,
-  NormalizedStoriesSpecifier,
-  StoriesEntry,
-  DecoratorFunction,
-} from '@storybook/types';
-import { toRequireContext } from '@storybook/core-webpack';
-import { normalizeStoriesEntry } from '@storybook/core-common';
 import registerRequireContextHook from '@storybook/babel-plugin-require-context-hook/register';
+import { normalizeStoriesEntry } from '@storybook/core-common';
+import { toRequireContext } from '@storybook/core-webpack';
+import type {
+    ArgsEnhancer,
+    ArgTypesEnhancer, DecoratorFunction, NormalizedStoriesSpecifier, Renderer, StoriesEntry
+} from '@storybook/types';
+import fs from 'fs';
 import global from 'global';
+import path from 'path';
 
-import type { ClientApi } from './Loader';
 import type { StoryshotsOptions } from '../api/StoryshotsOptions';
+import type { ClientApi } from './Loader';
 
 registerRequireContextHook();
 
@@ -76,7 +72,7 @@ function getConfigPathParts(input: string): Output {
       output.requireContexts = output.stories.map((specifier) => {
         const { path: basePath, recursive, match } = toRequireContext(specifier);
 
-        // eslint-disable-next-line no-underscore-dangle
+        // eslint-disable-dev-line no-underscore-dangle
         return global.__requireContext(workingDir, basePath, recursive, match);
       });
     }

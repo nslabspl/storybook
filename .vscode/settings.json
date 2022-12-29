@@ -1,59 +1,55 @@
 {
-  "typescript.tsdk": "./code/node_modules/typescript/lib",
-  "[javascript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.formatOnSave": true
-  },
-  "[javascriptreact]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.formatOnSave": true
-  },
-  "[typescript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.formatOnSave": true
-  },
-  "[typescriptreact]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.formatOnSave": true
-  },
+	"typescript.tsdk": "./code/node_modules/typescript/lib",
+	"[javascript]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode",
+		"editor.formatOnSave": true
+	},
+	"[javascriptreact]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode",
+		"editor.formatOnSave": true
+	},
+	"[typescript]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode",
+		"editor.formatOnSave": true
+	},
+	"[typescriptreact]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode",
+		"editor.formatOnSave": true
+	},
 
-  "editor.acceptSuggestionOnEnter": "on",
-  "editor.autoClosingBrackets": "always",
-  "editor.autoClosingDelete": "always",
-  "editor.autoClosingQuotes": "always",
-  "editor.find.autoFindInSelection": "never",
-  "editor.find.addExtraSpaceOnTop": false,
-  "editor.cursorStyle": "line",
-  "editor.formatOnSave": true,
-  "editor.formatOnSaveMode": "file",
-  "editor.formatOnPaste": true,
-  "editor.minimap.enabled": false,
-  "workbench.tree.expandMode": "singleClick",
-  "workbench.tree.indent": 8,
-  "workbench.tree.renderIndentGuides": "onHover",
-  "workbench.colorTheme": "GitHub Light",
-  "workbench.editor.closeOnFileDelete": true,
-  "workbench.editor.tabCloseButton": "left",
-  "workbench.startupEditor": "none",
-  "files.autoSave": "afterDelay",
-  "files.autoSaveDelay": 500,
-  "files.insertFinalNewline": false,
-  "files.saveConflictResolution": "askUser",
-  "markdownlint.config": {
-    "MD025": false,
-    "MD029": false,
-    "MD030": {
-      "ol_multi": 2,
-      "ol_single": 1,
-      "ul_multi": 2,
-      "ul_single": 1
-    },
-    "MD031": false,
-    "MD032": false,
-    "MD033": false,
-    "MD040": false,
-    "MD041": false,
-    "MD022": false,
-    "MD047": false
-  }
+	"[markdown]": {
+		"editor.unicodeHighlight.ambiguousCharacters": false,
+		"editor.unicodeHighlight.invisibleCharacters": false,
+		"editor.wordWrap": "on",
+		"editor.quickSuggestions": {
+			"comments": "on",
+			"strings": "on",
+			"other": "on"
+		}
+	},
+
+	"editor.acceptSuggestionOnEnter": "on",
+	"editor.autoClosingBrackets": "always",
+	"editor.autoClosingDelete": "always",
+	"editor.autoClosingQuotes": "always",
+	"editor.find.autoFindInSelection": "never",
+	"editor.find.addExtraSpaceOnTop": false,
+	"editor.cursorStyle": "line",
+	"editor.formatOnSave": true,
+	"editor.formatOnSaveMode": "file",
+	"editor.formatOnPaste": true,
+	"editor.minimap.enabled": false,
+	"workbench.tree.expandMode": "singleClick",
+	"workbench.tree.indent": 8,
+	"workbench.tree.renderIndentGuides": "onHover",
+	"workbench.colorTheme": "GitHub Light",
+	"workbench.editor.closeOnFileDelete": true,
+	"workbench.editor.tabCloseButton": "left",
+	"workbench.startupEditor": "none",
+	"files.autoSave": "afterDelay",
+	"files.autoSaveDelay": 500,
+	"files.insertFinalNewline": false,
+	"files.saveConflictResolution": "askUser",
+	"markdownlint.config": {},
+	"markdown.preview.openMarkdownLinks": "inEditor",
 }

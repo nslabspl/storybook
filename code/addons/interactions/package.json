@@ -7,13 +7,13 @@
     "data-state",
     "test"
   ],
-  "homepage": "https://github.com/storybookjs/storybook/tree/main/addons/interactions",
+  "homepage": "https://github.com/nslabspl/storybook/tree/main/addons/interactions",
   "bugs": {
-    "url": "https://github.com/storybookjs/storybook/issues"
+    "url": "https://github.com/nslabspl/storybook/issues"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/storybookjs/storybook.git",
+    "url": "https://github.com/nslabspl/storybook.git",
     "directory": "addons/interactions"
   },
   "funding": {
@@ -88,7 +88,7 @@
   },
   "devDependencies": {
     "@storybook/jest": "^0.0.10",
-    "@storybook/testing-library": "0.0.14-next.0",
+    "@storybook/testing-library": "0.0.14-dev.0",
     "@types/node": "^16.0.0",
     "formik": "^2.2.9",
     "typescript": "^4.9.3"

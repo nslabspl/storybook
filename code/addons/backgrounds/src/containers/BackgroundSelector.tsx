@@ -1,20 +1,18 @@
-import type { FC } from 'react';
-import React, { Fragment, useCallback, useMemo, memo } from 'react';
 import memoize from 'memoizerific';
+import type { FC } from 'react';
+import React, { Fragment, memo, useCallback, useMemo } from 'react';
 
-import { useParameter, useGlobals } from '@storybook/manager-api';
 import { logger } from '@storybook/client-logger';
-import { Icons, IconButton, WithTooltip, TooltipLinkList } from '@storybook/components';
+import { IconButton, Icons, TooltipLinkList, WithTooltip } from '@storybook/components';
+import { useGlobals, useParameter } from '@storybook/manager-api';
 
-import { PARAM_KEY as BACKGROUNDS_PARAM_KEY } from '../constants';
 import { ColorIcon } from '../components/ColorIcon';
-import type {
-  BackgroundSelectorItem,
-  Background,
-  BackgroundsParameter,
-  GlobalState,
-} from '../types';
+import { PARAM_KEY as BACKGROUNDS_PARAM_KEY } from '../constants';
 import { getBackgroundColorByName } from '../helpers';
+import type {
+  Background, BackgroundSelectorItem, BackgroundsParameter,
+  GlobalState
+} from '../types';
 
 const createBackgroundSelectorItem = memoize(1000)(
   (
@@ -97,7 +95,7 @@ export const BackgroundSelector: FC = memo(function BackgroundSelector() {
 
   if (Array.isArray(backgroundsConfig)) {
     logger.warn(
-      'Addon Backgrounds api has changed in Storybook 6.0. Please refer to the migration guide: https://github.com/storybookjs/storybook/blob/next/MIGRATION.md'
+      'Addon Backgrounds api has changed in Storybook 6.0. Please refer to the migration guide: https://github.com/nslabspl/storybook/blob/dev/MIGRATION.md'
     );
   }
 

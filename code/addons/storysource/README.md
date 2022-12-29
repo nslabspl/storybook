@@ -4,10 +4,10 @@ This addon is used to show stories source in the addon panel.
 
 [Framework Support](https://storybook.js.org/docs/react/api/frameworks-feature-support)
 
-![Storysource Demo](https://raw.githubusercontent.com/storybookjs/storybook/next/code/addons/storysource/docs/demo.gif)
+![Storysource Demo](https://raw.githubusercontent.com/nslabspl/storybook/dev/code/addons/storysource/docs/demo.gif)
 
 - [Getting Started](#getting-started)
-  - [Install using preset](#install-using-preset)
+- [Install using preset](#install-using-preset)
 - [Theming](#theming)
 - [Displaying full source](#displaying-full-source)
 
@@ -52,13 +52,13 @@ module.exports = {
 };
 ```
 
-To customize the `source-loader`, pass `loaderOptions`. Valid configurations are documented in the [`source-loader` README](https://github.com/storybookjs/storybook/tree/main/lib/source-loader/README.md#options).
+To customize the `source-loader`, pass `loaderOptions`. Valid configurations are documented in the [`source-loader` README](https://github.com/nslabspl/storybook/tree/main/lib/source-loader/README.md#options).
 
 ## Theming
 
 Storysource will automatically use the light or dark syntax theme based on your storybook theme. See [Theming Storybook](https://storybook.js.org/docs/react/configure/theming) for more information.
 
-![Storysource Light/Dark Themes](https://raw.githubusercontent.com/storybookjs/storybook/next/addons/storysource/docs/theming-light-dark.png)
+![Storysource Light/Dark Themes](https://raw.githubusercontent.com/nslabspl/storybook/dev/addons/storysource/docs/theming-light-dark.png)
 
 ## Displaying full source
 

@@ -1,5 +1,5 @@
 <center>
-  <img src="https://raw.githubusercontent.com/storybookjs/storybook/master/addons/docs/docs/media/docspage-hero.png" width="100%" />
+  <img src="https://raw.githubusercontent.com/nslabspl/storybook/master/addons/docs/docs/media/docspage-hero.png" width="100%" />
 </center>
 
 <h1>Storybook DocsPage</h1>
@@ -10,7 +10,7 @@ When you install [Storybook Docs](../README.md), `DocsPage` is the zero-config d
 - [Component parameter](#component-parameter)
 - [Subcomponents parameter](#subcomponents-parameter)
 - [Replacing DocsPage](#replacing-docspage)
-  - [Remixing DocsPage using doc blocks](#remixing-docspage-using-doc-blocks)
+- [Remixing DocsPage using doc blocks](#remixing-docspage-using-doc-blocks)
 - [Story file names](#story-file-names)
 - [Inline stories vs. Iframe stories](#inline-stories-vs-iframe-stories)
 - [Show/Hide code](#showhide-code)
@@ -55,7 +55,7 @@ import { Badge } from './Badge';
 storiesOf('Path/to/Badge', module).addParameters({ component: Badge });
 ```
 
-If you're coming from the `storiesOf` format, there's [a codemod that adds it for you](https://github.com/storybookjs/storybook/blob/next/code/lib/codemod/README.md#add-component-parameters).
+If you're coming from the `storiesOf` format, there's [a codemod that adds it for you](https://github.com/nslabspl/storybook/blob/dev/code/lib/codemod/README.md#add-component-parameters).
 
 ## Subcomponents parameter
 

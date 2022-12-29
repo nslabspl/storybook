@@ -1,14 +1,16 @@
 # Storybook Controls Addon
 
-[Storybook](https://storybook.js.org) Controls gives you a graphical UI to interact with a component's arguments dynamically, without needing to code. It creates an addon panel next to your component examples ("stories"), so you can edit them live.
+[Storybook](https://storybook.js.org) Controls gives you a graphical UI to interact with a component's arguments dynamically, without
+need to code. It creates an addon panel dev to your component examples ("stories"), so you can edit them live.
 
 [Framework Support](https://storybook.js.org/docs/react/api/frameworks-feature-support)
 
-![Screenshot](https://raw.githubusercontent.com/storybookjs/storybook/next/code/addons/controls/docs/media/addon-controls-hero.gif)
+![Screenshot](https://raw.githubusercontent.com/nslabspl/storybook/dev/code/addons/controls/docs/media/addon-controls-hero.gif)
 
 ## Installation
 
-Controls is part of [essentials](https://storybook.js.org/docs/react/essentials/introduction) and so is installed in all new Storybooks by default. If you need to add it to your Storybook, you can run:
+Controls is part of [essentials](https://storybook.js.org/docs/react/essentials/introduction) and so is installed in all new
+Storybooks by default. If you need to add it to your Storybook, you can run:
 
 ```sh
 npm i -D @storybook/addon-controls
@@ -29,14 +31,14 @@ The usage is documented in the [documentation](https://storybook.js.org/docs/rea
 ## FAQs
 
 - [Storybook Controls Addon](#storybook-controls-addon)
-  - [Installation](#installation)
-  - [Usage](#usage)
-  - [FAQs](#faqs)
-    - [How will this replace addon-knobs?](#how-will-this-replace-addon-knobs)
-    - [How do I migrate from addon-knobs?](#how-do-i-migrate-from-addon-knobs)
-    - [My controls aren't being auto-generated. What should I do?](#my-controls-arent-being-auto-generated-what-should-i-do)
-    - [How can I disable controls for certain fields on a particular story?](#how-can-i-disable-controls-for-certain-fields-on-a-particular-story)
-    - [How do controls work with MDX?](#how-do-controls-work-with-mdx)
+- [Installation](#installation)
+- [Usage](#usage)
+- [FAQs](#faqs)
+- [How will this replace addon-knobs?](#how-will-this-replace-addon-knobs)
+- [How do I migrate from addon-knobs?](#how-do-i-migrate-from-addon-knobs)
+- [My controls aren't being auto-generated. What should I do?](#my-controls-arent-being-auto-generated-what-should-i-do)
+- [How can I disable controls for certain fields on a particular story?](#how-can-i-disable-controls-for-certain-fields-on-a-particular-story)
+- [How do controls work with MDX?](#how-do-controls-work-with-mdx)
 
 ### How will this replace addon-knobs?
 
@@ -49,9 +51,7 @@ If you are somehow tied to knobs or prefer the knobs interface, we are happy to 
 ### How do I migrate from addon-knobs?
 
 If you're already using [Storybook Knobs](https://github.com/storybookjs/addon-knobs) you should consider migrating to Controls.
-
-You're probably using it for something that can be satisfied by one of the cases [described above](#writing-stories).
-
+You're probably using it for something that can be satisfied by one of the cases [described above](writing-stories).
 Let's walk through two examples: migrating [knobs to auto-generated args](#knobs-to-custom-args) and [knobs to custom args](#knobs-to-custom-args).
 
 <h4>Knobs to auto-generated args</h4>
@@ -149,7 +149,7 @@ Basic.args = {
 
 The `argTypes` annotation (which can also be applied to individual stories if needed), gives Storybook the hints it needs to generate controls in these unsupported cases. See [control annotations](https://storybook.js.org/docs/react/essentials/controls#annotation) for a full list of control types.
 
-It's also possible that your Storybook is misconfigured. If you think this might be the case, please search through Storybook's [Github issues](https://github.com/storybookjs/storybook/issues), and file a new issue if you don't find one that matches your use case.
+It's also possible that your Storybook is misconfigured. If you think this might be the case, please search through Storybook's [Github issues](https://github.com/nslabspl/storybook/issues), and file a new issue if you don't find one that matches your use case.
 
 ### How can I disable controls for certain fields on a particular story?
 
@@ -210,4 +210,4 @@ export const Template = (args) => <Button {...args} />
 </Story>
 ```
 
-For more info, see a full [Controls example in MDX for Vue](https://raw.githubusercontent.com/storybookjs/storybook/next/code/examples/vue-kitchen-sink/src/stories/addon-controls.stories.mdx).
+For more info, see a full [Controls example in MDX for Vue](https://raw.githubusercontent.com/nslabspl/storybook/dev/code/examples/vue-kitchen-sink/src/stories/addon-controls.stories.mdx).

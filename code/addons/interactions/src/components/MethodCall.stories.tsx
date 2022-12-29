@@ -1,7 +1,7 @@
 import type { Call } from '@storybook/instrumenter';
-import React from 'react';
 import { styled, typography } from '@storybook/theming';
-import { Node, MethodCall } from './MethodCall';
+import React from 'react';
+import { MethodCall, Node } from './MethodCall';
 
 const StyledWrapper = styled.div(({ theme }) => ({
   backgroundColor: theme.background.content,
@@ -32,9 +32,9 @@ export const Args = () => (
     <Node value={null} />
     <Node value={undefined} />
     <Node value="Hello world" />
-    <Node value="https://github.com/storybookjs/storybook/blob/next/README.md" />
+    <Node value="https://github.com/nslabspl/storybook/blob/dev/README.md" />
     <Node value="012345678901234567890123456789012345678901234567890123456789" />
-    {/* eslint-disable-next-line react/jsx-boolean-value */}
+    {/* eslint-disable-dev-line react/jsx-boolean-value */}
     <Node value={true} />
     <Node value={false} />
     <Node value={12345} />

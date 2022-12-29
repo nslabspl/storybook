@@ -48,8 +48,8 @@ linkTo('Toggle'); // Links to the first story in the 'Toggle' kind
 
 With that, you can link an event in a component to any story in the Storybook.
 
-- First parameter is the story kind name (what you named with `title`).
-- Second (optional) parameter is the story name (what you named with `exported name`).
+-  First parameter is the story kind name (what you named with `title`).
+-  Second (optional) parameter is the story name (what you named with `exported name`).
   If the second parameter is omitted, the link will point to the first story in the given kind.
 
 You can also pass a function instead for any of above parameter. That function accepts arguments emitted by the event and it should return a string:
@@ -144,4 +144,4 @@ It accepts all the props the `a` element does, plus `story` and `kind`. It the `
 </LinkTo>
 ```
 
-To implement such a component for another framework, you need to add special handling for `click` event on native `a` element. See [`RoutedLink` sources](https://github.com/storybookjs/storybook/blob/main/addons/links/src/react/components/RoutedLink.tsx) for reference.
+To implement such a component for another framework, you need to add special handling for `click` event on native `a` element. See [`RoutedLink` sources](https://github.com/nslabspl/storybook/blob/main/addons/links/src/react/components/RoutedLink.tsx) for reference.

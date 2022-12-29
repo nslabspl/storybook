@@ -1,7 +1,7 @@
 import { $ } from 'zx';
 
 /**
- * Create a tmp directory using `mktemp` command and return the result
+ * Create a tmp directory
  *
  * @return {Promise<string>}
  */

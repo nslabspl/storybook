@@ -3,7 +3,6 @@ import { createOptions, getCommand } from './options';
 import { exec } from './exec';
 
 const cliExecutable = require.resolve('../../code/lib/cli/bin/index.js');
-
 export type CLIStep<TOptions extends OptionSpecifier> = {
   command: string;
   description: string;
@@ -22,7 +21,7 @@ export const steps = {
     options: createOptions({
       output: { type: 'string' },
       // TODO allow default values for strings
-      branch: { type: 'string', values: ['next'] },
+      branch: { type: 'string', values: ['dev'] },
     }),
   },
   add: {

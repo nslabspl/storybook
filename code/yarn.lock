@@ -13880,9 +13880,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"decode-uri-component@npm:^0.2.0":
-  version: 0.2.0
-  resolution: "decode-uri-component@npm:0.2.0"
+"decode-uri-component@npm:^0.2.1":
+  version: 0.2.1
+  resolution: "decode-uri-component@npm:0.2.1"
   checksum: dbc3c72e4a740703f76fb3f51e35bb81546aa3e8c7897e015b8bc289813d3044ad6eaa6048fbb43f6b7b34ef005527b7511da50399caa78b91ee39266a341822
   languageName: node
   linkType: hard
@@ -16533,9 +16533,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"express@npm:^4.17.1":
-  version: 4.18.2
-  resolution: "express@npm:4.18.2"
+"express@npm:^4.17.3":
+  version: 4.17.3
+  resolution: "express@npm:4.17.3"
   dependencies:
     accepts: ~1.3.8
     array-flatten: 1.1.1
@@ -17902,7 +17902,7 @@ __metadata:
   resolution: "git-up@npm:4.0.5"
   dependencies:
     is-ssh: ^1.3.0
-    parse-url: ^6.0.0
+    parse-url: 8.1.0
   checksum: 8141b99734ed64f21946c3645324ebad010dd83d1e9f8fe1230686604ded8376cda9ae7859500712f576fe281d61edba955f11a8e63ba1e1813208e1fdcf6813
   languageName: node
   linkType: hard
@@ -21909,9 +21909,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"jsonwebtoken@npm:8.5.1, jsonwebtoken@npm:^8.4.0":
-  version: 8.5.1
-  resolution: "jsonwebtoken@npm:8.5.1"
+"jsonwebtoken@npm:9.0.0":
+  version: 9.0.0
+  resolution: "jsonwebtoken@npm:9.0.0"
   dependencies:
     jws: ^3.2.2
     lodash.includes: ^4.3.0
@@ -25573,9 +25573,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"parse-url@npm:^6.0.0":
-  version: 6.0.5
-  resolution: "parse-url@npm:6.0.5"
+"parse-url@npm:8.1.0":
+  version: 8.1.0
+  resolution: "parse-url@npm:8.1.0"
   dependencies:
     is-ssh: ^1.3.0
     normalize-url: ^6.1.0
@@ -27226,26 +27226,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"qs@npm:6.11.0, qs@npm:^6.10.0, qs@npm:^6.10.1, qs@npm:^6.4.0, qs@npm:^6.9.4":
-  version: 6.11.0
-  resolution: "qs@npm:6.11.0"
-  dependencies:
-    side-channel: ^1.0.4
-  checksum: 4e4875e4d7c7c31c233d07a448e7e4650f456178b9dd3766b7cfa13158fdb24ecb8c4f059fa91e820dc6ab9f2d243721d071c9c0378892dcdad86e9e9a27c68f
-  languageName: node
-  linkType: hard
-
-"qs@npm:6.7.0":
-  version: 6.7.0
-  resolution: "qs@npm:6.7.0"
+"qs@npm:6.7.3":
+  version: 6.7.3
+  resolution: "qs@npm:6.7.3"
   checksum: 04e6934d8cfa4f352e5bf5fe16eeed75dccad16d1e03b53ece849839b7439940f0df8bf0bc4750306d65baf95ebe165315f61122067e33bfee7b7ef4e3945813
-  languageName: node
-  linkType: hard
-
-"qs@npm:~6.5.2":
-  version: 6.5.3
-  resolution: "qs@npm:6.5.3"
-  checksum: 6631d4f2fa9d315e480662646745a4aa3a708817fbffe2cbdacec8ab9be130f92740c66191770fe9b704bc5fa9c1cc1f6596f55ad132fef7bd3ad1582f199eb0
   languageName: node
   linkType: hard
 
@@ -31797,21 +31781,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"trim-newlines@npm:^1.0.0":
-  version: 1.0.0
-  resolution: "trim-newlines@npm:1.0.0"
-  checksum: ae859c83d0dbcbde32245509f7c51a4bc9696d56e080bc19acc95c4188381e34fba05a4b2fefb47b4ee4537150a11d57a0fd3cd1179837c06210795d7f62e795
-  languageName: node
-  linkType: hard
-
-"trim-newlines@npm:^2.0.0":
-  version: 2.0.0
-  resolution: "trim-newlines@npm:2.0.0"
-  checksum: 3f2d391b9f2d742807bcb1abfd7c069223dae939ba1e7af3cfcfac14e92bb94b2bd41fe75678e29d485e3f8aeb319c1fd7218d8eb1c0cc44179eb96f661124ac
-  languageName: node
-  linkType: hard
-
-"trim-newlines@npm:^3.0.0":
+"trim-newlines@npm:^3.0.1":
   version: 3.0.1
   resolution: "trim-newlines@npm:3.0.1"
   checksum: 03cfefde6c59ff57138412b8c6be922ecc5aec30694d784f2a65ef8dcbd47faef580b7de0c949345abdc56ec4b4abf64dd1e5aea619b200316e471a3dd5bf1f6
@@ -31825,9 +31795,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"trim@npm:0.0.1":
-  version: 0.0.1
-  resolution: "trim@npm:0.0.1"
+"trim@npm:0.0.3":
+  version: 0.0.3
+  resolution: "trim@npm:0.0.3"
   checksum: d974971fc8b8629d13286f20ec6ccc48f480494ca9df358d452beb1fd7eea1b802be41cc7ee157be4abbdf1b3ca79cc6d04c34b14a7026037d437e8de9dacecb
   languageName: node
   linkType: hard
