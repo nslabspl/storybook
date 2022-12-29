@@ -1,6 +1,5 @@
 RootFiles:
 - /*.yml
-- /*.js
 
 js:
 - any:

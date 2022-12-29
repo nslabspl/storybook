@@ -1,4 +1,4 @@
-import type { StorybookConfig } from '@storybook/server-webpack5';
+import { StorybookConfig } from '@storybook/server-webpack5';
 
 const mainConfig: StorybookConfig = {
   stories: ['../stories/**/*.stories.@(json|yaml|yml)'],
@@ -20,7 +20,7 @@ const mainConfig: StorybookConfig = {
   features: {
     storyStoreV7: true,
   },
-  framework: '@storybook/angular',
+  framework: '@storybook/angular'
 };
 
 module.exports = mainConfig;
