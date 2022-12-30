@@ -3,7 +3,7 @@
  * @version: first-alpha
  */
 const fs = require('fs');
-const { NODE_MOD_DIR } = require('../../const/appwide');
+const { NODE_MOD_DIR, NO_MOD_FOUND, MOD_NOT_LOADABLE } = require('../../const/appwide');
 
 function coreLoaderChecker_forEach(){
 	let mods = [];
@@ -12,6 +12,7 @@ function coreLoaderChecker_forEach(){
 		try {
 			mods.push(file);
 		} catch (err) {
+			err = `${err} ${NO_MOD_FOUND} or ${MOD_NOT_LOADABLE}`;
 			logger.error(err);
 		}
 	})
