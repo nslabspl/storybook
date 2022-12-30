@@ -3,7 +3,7 @@
  * @version: first-alpha
  */
 const fs = require('fs');
-const { NODE_MOD_DIR, NO_MOD_FOUND, MOD_NOT_LOADABLE } = require('../../const/appwide');
+const { NODE_MOD_DIR, NO_MOD_FOUND, MOD_NOT_LOADABLE } = require('../../const/node.msgs');
 
 function coreLoaderChecker_forEach(){
 	let mods = [];
@@ -18,3 +18,5 @@ function coreLoaderChecker_forEach(){
 	})
  return // I tu to co ma zwracać
 }
+
+export {coreLoaderChecker_forEach}
