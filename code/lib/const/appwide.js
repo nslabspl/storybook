@@ -1,0 +1,1 @@
+export const NODE_MOD_DIR = "/node_modules";
