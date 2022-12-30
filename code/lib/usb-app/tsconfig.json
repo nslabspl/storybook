@@ -1,0 +1,16 @@
+{
+	"ts-node": {
+		"esm": true,
+		"logError": true,
+		"compiler": "typescript",
+		"compilerOptions": {
+			"allowJs": true,
+			"alwaysStrict": true,
+			"allowSyntheticDefaultImports": true
+		}
+	},
+	"extends": "../../tsconfig.json",
+	"include": [
+		"src/**/*"
+	]
+}
