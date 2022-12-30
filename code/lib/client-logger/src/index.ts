@@ -2,7 +2,7 @@ import global from 'global';
 
 const { LOGLEVEL, console } = global;
 
-type LogLevel = 'trace' | 'debug' | 'info' | 'warn' | 'error' | 'silent';
+type LogLevel = 'trace' | 'debug' | 'info' | 'warn' | 'error';
 
 const levels: Record<LogLevel, number> = {
   trace: 1,
@@ -29,8 +29,6 @@ export const logger = {
     currentLogLevelNumber <= levels.warn && console.warn(message, ...rest),
   error: (message: any, ...rest: any[]): void =>
     currentLogLevelNumber <= levels.error && console.error(message, ...rest),
-  log: (message: any, ...rest: any[]): void =>
-    currentLogLevelNumber < levels.silent && console.log(message, ...rest),
 } as const;
 
 const logged = new Set();
