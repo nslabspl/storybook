@@ -11,5 +11,3 @@ logger.info('Info message');
 logger.warn('Warning message');
 logger.error('Error message');
 ```
-
-For more information visit: [storybook.js.org](https://storybook.js.org)
