@@ -1,3 +1,4 @@
+# Sensitive data
 .vscode/settings2.json
 *.log
 .idea
@@ -30,11 +31,12 @@ test-storybooks/angular-cli/addon-jest.testresults.json
 # mailmap
 .mailmap
 
-# old workflows
-.github/workflows-old
-
 # Snippets
 .vscode/*.code-snippets
 
 # Telemetry
 code/lib/telemetry/*
+
+# Subdirs of .github
+.github/patches
+.github/workflows-old
