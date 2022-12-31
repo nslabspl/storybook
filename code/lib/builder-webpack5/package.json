@@ -36,7 +36,6 @@
       "types": "./dist/presets/preview-preset.d.ts"
     },
     "./templates/virtualModuleModernEntry.js.handlebars": "./templates/virtualModuleModernEntry.js.handlebars",
-    "./templates/preview.ejs": "./templates/preview.ejs",
     "./package.json": "./package.json"
   },
   "main": "dist/index.js",

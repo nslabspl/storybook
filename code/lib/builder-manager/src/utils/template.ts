@@ -1,6 +1,10 @@
 import path, { dirname, join } from 'path';
 import fs from 'fs-extra';
 
+/**
+ * @author @wojtekxtx
+ * @todo Look for EJS alternative
+ */
 import { render } from 'ejs';
 
 import type { DocsOptions, Options, Ref } from '@storybook/types';
@@ -44,7 +48,7 @@ export async function getManagerHeadTemplate(
 }
 
 export async function getManagerMainTemplate() {
-  return getTemplatePath(`manager.ejs`);
+  return null;
 }
 
 export const renderHTML = async (
