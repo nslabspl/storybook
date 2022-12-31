@@ -152,8 +152,6 @@ Furthermore, `config` requires the `HtmlWebpackplugin` to generate the preview p
 
 <!-- prettier-ignore-end -->
 
-Finally, if your custom webpack config uses a loader that does not explicitly include specific file extensions via the `test` property, in that case, it is necessary to `exclude` the `.ejs` file extension from that loader.
-
 If you're using a non-standard Storybook config directory, you should put `main.js` there instead of `.storybook` and update the `include` path to ensure it resolves to your project root.
 
 ### Using your existing config
