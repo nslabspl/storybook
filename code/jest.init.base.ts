@@ -1,38 +1,24 @@
 import '@testing-library/jest-dom';
-
-// setup file
 import { configure } from 'enzyme';
-// @ts-expect-error (Converted from ts-ignore)
 import Adapter from 'enzyme-adapter-react-16';
-// @ts-expect-error (Converted from ts-ignore)
 import regeneratorRuntime from 'regenerator-runtime';
 import registerRequireContextHook from '@storybook/babel-plugin-require-context-hook/register';
 
 registerRequireContextHook();
 
 jest.mock('util-deprecate', () => (fn: any) => fn);
-
-// mock console.info calls for cleaner test execution
 global.console.info = jest.fn().mockImplementation(() => {});
 global.console.debug = jest.fn().mockImplementation(() => {});
 
-// mock local storage calls
 const localStorageMock = {
   getItem: jest.fn().mockName('getItem'),
   setItem: jest.fn().mockName('setItem'),
   clear: jest.fn().mockName('clear'),
 };
-// @ts-expect-error (Converted from ts-ignore)
 global.localStorage = localStorageMock;
-// @ts-expect-error (Converted from ts-ignore)
 global.regeneratorRuntime = regeneratorRuntime;
 
 configure({ adapter: new Adapter() });
-
-/* Fail tests on PropType warnings
- This allows us to throw an error in tests environments when there are prop-type warnings.
- This should keep the tests free of warnings going forward.
- */
 
 const ignoreList = [
   (error: any) => error.message.includes('":nth-child" is potentially unsafe'),
