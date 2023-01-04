@@ -52,4 +52,6 @@
 	"files.saveConflictResolution": "askUser",
 	"markdownlint.config": {},
 	"markdown.preview.openMarkdownLinks": "inEditor",
+	"git.enableSmartCommit": false,
+	"git.smartCommitChanges": "tracked"
 }
