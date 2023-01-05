@@ -1,0 +1,31 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema",
+	"$id": "instance-conf-schema",
+	"properties": {
+		"InstanceType":{
+			"enum": [
+				"dev", "prod", "test"
+			],
+			"description": "Type of instance"
+		},
+		"devSrvAddress":{
+			"type":"string",
+			"maxLength": 26,
+			"description": "Address of instance"
+		},
+		"Landing Page":{
+			"type":"boolean"
+		},
+		"EnvName":{
+			"type":"boolean",
+			"default":"instanceI",
+			"description": "If set to NO, default will be used."
+		},
+		"Instance charset":{
+			"enum": ["utf-8", "latin"]
+		},
+		"Container":{
+			"type":"boolean"
+		}
+	}
+}
