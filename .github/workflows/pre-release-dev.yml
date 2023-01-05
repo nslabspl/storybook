@@ -24,4 +24,3 @@ jobs:
           title: "Dev Build"
           files: |
             LICENSE.txt
-            *.jar
