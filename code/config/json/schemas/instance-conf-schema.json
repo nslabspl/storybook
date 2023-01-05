@@ -6,7 +6,14 @@
 			"enum": [
 				"dev", "prod", "test"
 			],
-			"description": "Type of instance"
+			"description": "Type of instance",
+			"$comment": "Type of instance"
+		},
+		"Supervisor type":{
+			"enum": [
+				"KVM","Oracle VMBox","VMWare","STDiO"
+			],
+			"$comment": "Supervisor"
 		},
 		"devSrvAddress":{
 			"type":"string",
