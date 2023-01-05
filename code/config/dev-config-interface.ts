@@ -15,5 +15,4 @@ function setDevConfig(devConf: devConfig){
 }
 
 function getSrvAddress(devConf: devConfig){
-
 }
