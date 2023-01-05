@@ -6,7 +6,7 @@ interface devConfig {
 	isContainer: boolean;
 }
 
-function setDevConfig(devConf: devConfig){
+function setDevConfig({ devConf }: { devConf: devConfig; }): void{
 	devConf.devSrvAddress = "127.0.0.1:8080";
 	devConf.devMainLandingPage = "/main.php";
 	devConf.devEnvName = "StoryBook dev env";
