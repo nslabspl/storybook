@@ -1,0 +1,4 @@
+{
+	"$schema": "./json/schemas/instance-conf-schema.json",
+	"Supervisor type": "Oracle VMBox"
+}
