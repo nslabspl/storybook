@@ -9,5 +9,4 @@ const documentType = 'text/html';
 
 // Tags etc
 const devDesiredTags = ["<html>", "<head>", "<title>", "<body>"];
-
 export { devEnvName, devSrvAddress, devEnvCharset, isContainerized, devMainLandingPage, devDesiredTags, documentType };
