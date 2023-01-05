@@ -1,0 +1,54 @@
+name: Test Supported Distributions
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened, ready_for_review]
+
+permissions:
+  contents: read
+
+jobs:
+  smoke-tests:
+    if: github.event.pull_request.draft == false
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3.1.0
+
+      - name: Check scripts in repository are executable
+        run: |
+          IFS=$'\n';
+          for f in $(find . -name '*.sh'); do if [[ ! -x $f ]]; then echo "$f is not executable" && FAIL=1; fi ;done
+          unset IFS;
+          # If FAIL is 1 then we fail.
+          [[ $FAIL == 1 ]] && exit 1 || echo "Scripts are executable!"
+
+      - name: Get editorconfig-checker
+        uses: editorconfig-checker/action-editorconfig-checker@main # tag v1.0.0 is really out of date
+
+      - name: Run editorconfig-checker
+        run: editorconfig-checker
+
+  distro-test:
+    if: github.event.pull_request.draft == false
+    runs-on: ubuntu-latest
+    needs: smoke-tests
+    strategy:
+      fail-fast: false
+      matrix:
+        distro:
+          [
+            debian_10,
+            debian_11,
+            ubuntu_20,
+            ubuntu_22,
+            centos_8,
+            centos_9,
+            fedora_35,
+            fedora_36,
+          ]
+    env:
+      DISTRO: ${{matrix.distro}}
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3.1.0
