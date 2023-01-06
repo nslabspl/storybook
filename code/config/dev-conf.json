@@ -1,4 +1,3 @@
 {
-	"$schema": "./json/schemas/instance-conf-schema.json",
-	"Supervisor type": "Oracle VMBox"
+	"$schema": "./json/schemas/instance-conf-schema.json"
 }
