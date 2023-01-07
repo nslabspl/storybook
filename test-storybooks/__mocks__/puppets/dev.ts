@@ -1,4 +1,9 @@
-// Source: https://github.com/cypress-io/cypress/blob/develop/npm/webpack-dev-server/src/devServer.ts#L63
+/**
+ * @param devServerConfig 
+ * @returns Promise
+ * @author @wojtekxtx
+ * @see https://github.com/cypress-io/cypress/blob/develop/npm/webpack-dev-server/src/devServer.ts#L63
+ */
 export function devServer (devServerConfig: WebpackDevServerConfig): Promise<ResolvedDevServerConfig> {
   return new Promise(async (resolve, reject) => {
     const result = await devServer.create(devServerConfig) as DevServerCreateResult
