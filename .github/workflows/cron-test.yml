@@ -31,11 +31,6 @@ jobs:
           echo "SHA=$SHA" >> $GITHUB_ENV
 
       - name: Push branch to trigger Build workflow
-        # This must use a personal access token because of a Github Actions
-        # limitation where it will not trigger workflows from pushes from
-        # other workflows with the token it provides.
-        # The PERSONAL_ACCESS secret must be a token with `repo` scope.
-        # See https://help.github.com/en/actions/reference/events-that-trigger-workflows#triggering-new-workflows-using-a-personal-access-token
         run: |
           git checkout -B cron-${{matrix.branch}}-${{env.SHA}}
           git push https://${GITHUB_ACTOR}:${{ secrets.PERSONAL_TOKEN }}@github.com/${GITHUB_REPOSITORY} cron-${{matrix.branch}}-${{env.SHA}} --force
@@ -49,6 +44,5 @@ jobs:
           timeoutSeconds: 1800
 
       - name: Cleanup
-        # Always cleanup the cron-* branches
         if: always()
         run: git push https://${GITHUB_ACTOR}:${{ secrets.PERSONAL_TOKEN}}@github.com/${GITHUB_REPOSITORY} --delete cron-${{matrix.branch}}-${{env.SHA}} || true # Don't fail build if cleanup fails
