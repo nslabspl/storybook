@@ -15,7 +15,8 @@ import Component from '@ember/component';
  *   click=(action onClick)
  * }}
  * ```
- *
+ * @author @wojtekxtx
+ * @see https://emberjs.com/
  * @class WelcomeBanner
  */
 export default Component.extend({
