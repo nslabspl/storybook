@@ -76,9 +76,7 @@ Use the list below as a reference when filling in the values for both the `suppo
 }
 ```
 
-The `package.json` above appears like below in the catalog. See an example of a production package.json [here](https://github.com/chromaui/storybook-outline/blob/main/package.json).
-
-![Storybook addon in the catalog](./addon-display.png)
+The `package.json` above appears like below in the catalog. See an example of a production package.json [here](../linked-files/sb-package.json).
 
 # How long does it take for my addon to show up in the catalog?
 
