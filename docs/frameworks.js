@@ -47,6 +47,7 @@ export const featureGroups = [
       {
         name: 'a11y',
         unsupported: [],
+        communityFrameworks:[]
       },
       {
         name: 'cssresources',
@@ -63,10 +64,12 @@ export const featureGroups = [
       {
         name: 'google-analytics',
         unsupported: [],
+        communityFrameworks:[]
       },
       {
         name: 'graphql',
         supported: ['react', 'angular'],
+        communityFrameworks: []
       },
       {
         name: 'jest',
