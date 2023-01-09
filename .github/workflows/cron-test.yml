@@ -33,7 +33,7 @@ jobs:
       - name: Push branch to trigger Build workflow
         run: |
           git checkout -B cron-${{matrix.branch}}-${{env.SHA}}
-          git push https://${GITHUB_ACTOR}:${{ secrets.PERSONAL_TOKEN }}@github.com/${GITHUB_REPOSITORY} cron-${{matrix.branch}}-${{env.SHA}} --force
+          git push origin ${{matrix.branch}}
 
       - name: Wait for Build completion
         uses: jitterbit/await-check-suites@v1
@@ -42,7 +42,3 @@ jobs:
           appSlugFilter: github-actions
           onlyFirstCheckSuite: true
           timeoutSeconds: 1800
-
-      - name: Cleanup
-        if: always()
-        run: git push https://${GITHUB_ACTOR}:${{ secrets.PERSONAL_TOKEN}}@github.com/${GITHUB_REPOSITORY} --delete cron-${{matrix.branch}}-${{env.SHA}} || true # Don't fail build if cleanup fails
